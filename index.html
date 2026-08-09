@@ -1,0 +1,2706 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Echoes of Forever | Interactive Digital Novel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="opening" id="opening" aria-label="Opening">
+      <video class="opening-video" src="assets/opening-web-story.mp4" autoplay loop playsinline></video>
+      <div class="opening-shade" aria-hidden="true"></div>
+      <div class="opening-content">
+        <p class="kicker">Wedding Mensive First</p>
+        <h1>Echoes of Forever</h1>
+        <p class="opening-author">by Mr. Anonymous</p>
+        <p class="opening-quote">A place for every memory that never learned how to end.</p>
+        <button class="primary-button" id="openBook" type="button">Open Book</button>
+      </div>
+      <div class="book-transition" id="bookTransition" aria-hidden="true"><span></span><span></span></div>
+    </section>
+
+    <aside class="music-player" id="musicPlayer" aria-label="Music dashboard">
+      <div class="track-cover"><img id="trackCover" src="assets/echoes-cover.jpg" alt="Current song cover" /></div>
+      <div class="track-meta">
+        <span class="kicker" id="trackCategory">Now Playing</span>
+        <strong id="trackTitle">Select a song</strong>
+        <small id="trackArtist">Playlist ready</small>
+        <input id="trackProgress" type="range" min="0" max="100" value="0" aria-label="Song progress" />
+      </div>
+      <div class="player-controls">
+        <button id="prevTrack" type="button" aria-label="Previous song">Prev</button>
+        <button id="playTrack" type="button" aria-label="Play or pause music">Play</button>
+        <button id="nextTrack" type="button" aria-label="Next song">Next</button>
+      </div>
+      <button class="playlist-toggle" id="playlistToggle" type="button" aria-label="Open playlist">☰</button>
+    </aside>
+
+    <aside class="playlist-drawer" id="playlistDrawer" aria-hidden="true">
+      <div class="drawer-head">
+        <div><p class="kicker">Playlist</p><h2>Music Library</h2></div>
+        <button id="closePlaylist" type="button" aria-label="Close playlist">Close</button>
+      </div>
+      <div class="playlist-list" id="playlistList"></div>
+    </aside>
+
+    <main class="novel-shell" id="novelShell">
+      <section class="page cover-page" id="cover">
+        <div class="cover-layout">
+          <figure class="novel-cover"><img src="assets/echoes-cover.jpg" alt="Echoes of Forever novel cover" /></figure>
+          <div class="cover-copy">
+            <p class="kicker">Interactive Digital Novel</p>
+            <h2>Echoes of Forever</h2>
+              <p>Echoes of Forever merupakan karya fiksi yang ditulis berdasarkan imajinasi penulis.</p>
+              <p>Beberapa momen dan emosi dalam cerita terinspirasi dari pengalaman pribadi penulis, namun seluruh alur, karakter, serta pengembangan cerita merupakan hasil kreativitas penulis dan tidak menggambarkan kisah nyata secara utuh.</p>
+              <p>Kisah ini dibuat secara orisinal dan bukan hasil adaptasi maupun plagiarisme dari karya lain. Apabila terdapat kesamaan nama, tempat, atau kejadian, hal tersebut semata-mata merupakan kebetulan dan tidak disengaja.</p>
+            <div class="chapter-jump" aria-label="Chapter list"><a href="#chapter-1">1</a><a href="#chapter-2">2</a><a href="#chapter-3">3</a><a href="#chapter-4">4</a><a href="#chapter-5">5</a><a href="#chapter-6">6</a><a href="#chapter-7">7</a><a href="#chapter-8">8</a><a href="#chapter-9">9</a><a href="#chapter-10">10</a><a href="#chapter-11">11</a><a href="#chapter-12">12</a></div>
+            <a class="primary-button" href="#synopsis">Continue</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page reading-page" id="synopsis">
+        <article class="reading-card prose-card">
+          <p class="kicker">Synopsis</p>
+          <h2>Sinopsis</h2>
+              <p>Ditengah hiruk pikuk riuhnya kehidupan dunia, Nicholass menemukan pelabuhan hatinya pada Liu. Kisah mereka bermula dari tatapan yang tidak disengaja, berlanjut pada tawa yang berderai, hingga akhirnya merajut benang takdir yang indah antara keduanya. Bersama, mereka menapaki jalan menuju kebahagiaan yang selalu diimpikan, membuktikan bahwa cinta sejati mampu menaklukkan segala rintangan. Namun, dibalik senyum yang merekah dan ikatan yang kuat, ada rahasia yang tersembunyi dengan rapi dan menjadi rintangan bagi keduanya, menguji kedalaman cinta hingga batasnya. Akankah kenangan manis ini cukup untuk membingkai kisah abadi mereka?</p>
+            <nav class="chapter-nav"><a class="primary-button" href="#chapter-1">Mulai Bab 1</a></nav>
+        </article>
+      </section>
+
+      <section class="chapter-stack" aria-label="Novel chapters">
+        <article class="page reading-page chapter-page" id="chapter-1">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 01</p>
+            <h2>Bab 1</h2>
+              <p>Mentari sore membelai wajah Nicholass saat tawa lepasnya bercampur dengan riuh Festival Seni dan Bakat tahunan. Di sampingnya, Jonathan tak henti-hentinya melontarkan candaan receh yang selalu berhasil membuat mereka bertiga tertawa.</p>
+              <p>&quot;Kalau band pembuka masih fals lagi, gua naik panggung aja deh,&quot; celetuk Jonathan.</p>
+              <p>&quot;Terus ngapain? Jadi bahan tertawaan satu kampus?&quot; balas Nicholass sambil menyenggol bahunya.</p>
+              <p>Elrick hanya menggeleng pelan, senyum tipis menghiasi wajahnya. Sejak kecil, ia memang terbiasa menjadi penengah di antara dua sahabatnya yang tak pernah kehabisan energi.</p>
+              <p>Meski kini mereka kuliah di fakultas yang berbeda, persahabatan mereka tak pernah berubah. Nicholass dan Jonathan memilih Informatika di Fakultas Sains dan Teknologi, sementara Elrick mengejar impiannya di Program Studi Psikologi, Fakultas Kesehatan. Untungnya, gedung kedua fakultas itu berdiri berdampingan, membuat mereka tetap bisa bertemu hampir setiap hari. Di seberangnya, gedung Fakultas Pendidikan dan Hukum menjulang megah, melengkapi kawasan kampus yang sore itu dipenuhi ribuan mahasiswa.</p>
+              <p>Festival Seni dan Bakat tahunan selalu menjadi acara yang paling dinanti. Musik memenuhi udara, sorak-sorai penonton bersahut-sahutan, aroma makanan dari deretan stan bercampur dengan semilir angin sore.</p>
+              <p>&quot;Nih, bentar lagi band kampus tampil. Gua beli minum dulu,&quot; ujar Nicholass.</p>
+              <p>&quot;Buruan. Jangan ilang,&quot; sahut Jonathan.</p>
+              <p>Nicholass mengangkat tangan sebagai tanda mengerti, lalu berjalan menerobos lautan manusia menuju deretan stan minuman.</p>
+              <p>Baru beberapa langkah, langkahnya melambat.</p>
+              <p>Di tengah keramaian, pandangannya berhenti pada seorang lelaki yang sedang berdiri membelakanginya.</p>
+              <p>Rambut hitam legam itu tertata rapi. Ketika lelaki itu sedikit memiringkan wajahnya, bibir merah mudanya tampak jelas diterpa cahaya matahari sore.</p>
+              <p>Entah mengapa, dada Nicholass terasa sesak oleh perasaan yang tak mampu ia jelaskan.</p>
+              <p>&#x27;gua pernah lihat dia...&#x27;</p>
+              <p>Keyakinan itu muncul begitu saja.</p>
+              <p>Namun semakin keras ia mencoba mengingat, semakin kosong pikirannya.</p>
+              <p>Siapa dia?</p>
+              <p>Di mana mereka pernah bertemu?</p>
+              <p>Dan mengapa sosok asing itu justru terasa begitu... akrab?</p>
+              <p>Tanpa sadar, kaki Nicholass melangkah mengikuti lelaki itu dari kejauhan.</p>
+              <p>Lelaki tersebut membawa dua botol minuman di kedua tangannya, berjalan santai melewati keramaian festival menuju gedung di seberang. Nicholass baru sadar tujuan lelaki itu adalah Gedung Fakultas Pendidikan dan Hukum.</p>
+              <p>&quot;Gila... ngapain gua ngikutin orang?&quot; gumam Nicholass pelan.</p>
+              <p>Namun langkahnya tak juga berhenti.</p>
+              <p>Sesampainya di depan gedung, seorang lelaki lain yang sedari tadi menunggu langsung melambaikan tangan.</p>
+              <p>&quot;Hey, Liu! Lama banget lo!&quot;</p>
+              <p>Lelaki yang dipanggil Liu itu menghembuskan nafas pelan sambil mengangkat kedua botol minuman di tangannya.</p>
+              <p>&quot;Lagian kenapa gak masuk aja sekalian sih? Katanya nanti mau lihat konser band kampus?&quot;</p>
+              <p>&quot;Iya... anu, hehe. Tadi ketemu anak Arsitektur bentar. Dia gak bisa dateng ke festival, disuruh ikut acara keluarga.&quot;</p>
+              <p>&quot;Banyak alasan aja.&quot;</p>
+              <p>Liu terkekeh kecil, lalu menyodorkan salah satu botol minuman.</p>
+              <p>&quot;Nih. Ayo cepet masuk, keburu mulai itu.&quot;</p>
+              <p>Nicholass hanya berdiri beberapa meter dari mereka. Untuk pertama kalinya, ia mengetahui nama lelaki yang sejak tadi memenuhi isi kepalanya.</p>
+              <p>&#x27;Liu.&#x27;</p>
+              <p>Nama itu terdengar sederhana, tetapi entah mengapa terasa begitu akrab di telinganya.</p>
+              <p>Belum sempat pikirannya memproses semuanya, suara dering ponsel memecah lamunannya.</p>
+              <p>Brak!</p>
+              <p>Nicholass sampai sedikit tersentak sebelum buru-buru mengangkat telepon.</p>
+              <p>&quot;Woy, Nicho! Lama banget lo ke mana aja?! Beli minuman doang lama amat!&quot;</p>
+              <p>Suara Jonathan terdengar begitu keras sampai membuat Nicholass menjauhkan ponselnya sedikit dari telinga.</p>
+              <p>&quot;Eh buset, untung gua gak congek.&quot;</p>
+              <p>Barulah ia teringat tujuan awalnya.</p>
+              <p>&quot;Oh iya!&quot;</p>
+              <p>Tanpa pikir panjang, ia segera berlari kembali menuju stan minuman.</p>
+              <p>Ketika Nicholass kembali, pertunjukan dari Tim teater Kampus sudah hampir selesai. Para kru terlihat sibuk mempersiapkan alat musik di atas panggung, sementara MC bersiap mengumumkan penampilan band kampus.</p>
+              <p>Jonathan dan Elrick langsung menatapnya dengan wajah kesal.</p>
+              <p>&quot;Ehehe... ini nih minumnya.&quot;</p>
+              <p>Nicholass menyodorkan dua botol yang baru dibelinya.</p>
+              <p>Jonathan menerima botol itu sambil menggeleng.</p>
+              <p>&quot;Lo beli minuman apa nyari jodoh?&quot;</p>
+              <p>Nicholass nyengir lebar.</p>
+              <p>&quot;Tadi gua ketemu cowok manis... cantik juga sih. Kayak kenal, tapi gua lupa. Kayaknya... gua jatuh cinta.&quot;</p>
+              <p>Elrick langsung menghela napas panjang.</p>
+              <p>&quot;Jadi tadi lo ngikutin dia dulu?&quot;</p>
+              <p>Nicholass hanya mengangguk kecil sambil tersenyum tak merasa bersalah.</p>
+              <p>Jonathan spontan menonyor pelan kepala sahabatnya.</p>
+              <p>&quot;Hey, dasar anak anjing bodoh. Lo emang gak kapok-kapok ya? Gak ada capeknya terpesona sama orang.&quot;</p>
+              <p>&quot;Enggak, Nat. Ini beda.&quot;</p>
+              <p>Senyum di wajah Nicholass perlahan menghilang.</p>
+              <p>&quot;Gua ngerasa... beneran beda pokoknya! Bahkan kayak ada secuil memori tentang dia. Tapi gua gak inget apa-apa sih.&quot;</p>
+              <p>Elrick menatap Nicholass beberapa detik sebelum akhirnya berbicara dengan nada pasrahnya.</p>
+              <p>&quot;Terserah lo dah, yang penting... jangan sampai lo dimainin lagi.&quot;</p>
+              <p>Ia berhenti sejenak.</p>
+              <p>&quot;Atau malah lo yang mainin perasaan orang.&quot;</p>
+              <p>Nicholass hanya mengembuskan napas pelan.</p>
+              <p>Ia sendiri tak mengerti kenapa perasaannya bisa sekuat ini kepada seseorang yang bahkan baru saja ia lihat.</p>
+              <p>Di atas panggung, MC akhirnya muncul.</p>
+              <p>&quot;Baik, teman-teman! Saat yang kita tunggu-tunggu telah tiba! Berikan tepuk tangan yang paling meriah untuk... Band Kampus kita FOREX!&quot;</p>
+              <p>Sorakan penonton langsung menggema memenuhi lapangan festival.</p>
+              <p>Lampu panggung mulai menyala, sementara para personel band berjalan naik dengan penuh percaya diri.</p>
+              <p>Di tengah riuh tepuk tangan itu, telinga Nicholass menangkap percakapan samar dari barisan kursi di seberangnya.</p>
+              <p>Tanpa sadar ia menoleh.</p>
+              <p>Dan lagi-lagi...</p>
+              <p>Liu.</p>
+              <p>Lelaki itu sedang berbincang santai dengan temannya.</p>
+              <p>&quot;Eh, lo jadi ikut audisi perekrutan band kampus?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Yakin?&quot;</p>
+              <p>Liu mengangguk mantap.</p>
+              <p>&quot;Seenggaknya gua pengen buktiin kalau gua gak sepayah itu buat hal diluar akademik. Siapa tau nanti bisa tampil di layar buat promosi kampus, atau jadi perwakilan kampus kalau ada acara di luar. Lumayan, kan jadi nilai tambahan diluar akademik?&quot;</p>
+              <p>Temannya mengangguk setuju.</p>
+              <p>Nicholass tak lagi mendengar kelanjutan percakapan mereka.</p>
+              <p>Tatapannya hanya terpaku pada sosok Liu yang sesekali tersenyum kecil sambil memperhatikan panggung.</p>
+              <p>Aneh.</p>
+              <p>Rasanya seperti dunia di sekelilingnya menghilang.</p>
+              <p>Suara musik.</p>
+              <p>Sorakan penonton.</p>
+              <p>Bahkan Jonathan yang sedang mengajaknya berbicara pun tak lagi masuk ke telinganya.</p>
+              <p>Yang tersisa hanyalah satu tekad yang perlahan tumbuh di dalam hatinya.</p>
+              <p>Apa pun caranya... setelah festival ini selesai, gua harus kenal sama dia.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#synopsis">Sinopsis</a><a class="primary-button" href="#chapter-2">Bab 2</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-2">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 02</p>
+            <h2>Bab 2</h2>
+              <p>Festival Seni dan Bakat telah berlalu hampir seminggu. Namun, sosok Liu masih terus memenuhi pikiran Nicholass.</p>
+              <p>Bahkan saat dosen sedang menjelaskan materi di kelas, pikirannya justru melayang mengingat senyum tipis lelaki itu.</p>
+              <p>&quot;Oi.&quot;</p>
+              <p>Jonathan menyenggol lengannya.</p>
+              <p>&quot;Lo denger gak sih dari tadi?&quot;</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>&quot;Ngelamun mulu. Udah kayak orang kesambet.&quot;</p>
+              <p>Nicholass hanya nyengir.</p>
+              <p>&quot;Gua kepikiran Liu.&quot;</p>
+              <p>Jonathan langsung memutar bola matanya.</p>
+              <p>&quot;Astaga... baru juga seminggu.&quot;</p>
+              <p>Di depan kelas, dosen akhirnya menutup perkuliahan.</p>
+              <p>&quot;Baik, minggu depan kita lanjutkan materi berikutnya.&quot;</p>
+              <p>Belum sempat mahasiswa lain berdiri, suara pengumuman dari luar kelas terdengar melalui pengeras suara kampus.</p>
+              <p>&quot;Diberitahukan kepada seluruh mahasiswa, pendaftaran audisi Tim Music Kampus akan ditutup hari ini pukul 14.00 WIB.&quot;</p>
+              <p>Mata Nicholass langsung berbinar, mereka menemui elrick yang sudah selesai kelas dan menunggu didepan.</p>
+              <p>Nicholass memulai.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>Jonathan dan Elrick saling berpandangan.</p>
+              <p>&quot;Kenapa lagi?&quot; tanya Elrick.</p>
+              <p>&quot;Dia kemarin bilang mau ikut audisi Tim Music.&quot;</p>
+              <p>&quot;Lah terus?&quot; Nicholass berdiri begitu saja.</p>
+              <p>&quot;Gua juga mau ikut.&quot;</p>
+              <p>&quot;Hah?!&quot; Jonathan dan Elrick kompak melongo.</p>
+              <p>&quot;Gila lo?&quot;</p>
+              <p>&quot;Ayo lah. Ikut aja, biar jadi grup band sekolah. Kan lumayan terkenal sementara. Generasi minat bakat periode ini bakal byk event jd kitab isa jd idol. Byk kampus luar sama orang umum juga hadir di event nnt.&quot;</p>
+              <p>&quot;Nicho, kita bertiga emang ada bakat begituan?.&quot; Pertanyaan elrick bukan bermaksud menanyakan namun menegaskan bahwa mereka kurang berbakat untuk hal ini.</p>
+              <p>&quot;Emang kenapa?&quot;</p>
+              <p>&quot;Emang bisa nyanyi?&quot; tanya Jonathan.</p>
+              <p>&quot;Bisa belajar.&quot;</p>
+              <p>&quot;Bisa dance?&quot; tanya elrick.</p>
+              <p>&quot;Bisa belajar.&quot;</p>
+              <p>&quot;Bisa main alat musik?&quot; tanya Jonathan lagi.</p>
+              <p>&quot;...&quot;</p>
+              <p>Jonathan menghela napas panjang.</p>
+              <p>&quot;Nah kan.&quot;</p>
+              <p>Nicholass menyeringai lebar.</p>
+              <p>&quot;Makanya ikut.&quot;</p>
+              <p>&quot;Anjing.&quot;</p>
+              <p>Meski sambil mengomel, Jonathan dan Elrick tetap ikut berlari bersama Nicholass menuju ruang latihan Tim Music.</p>
+              <p>Sayangnya...</p>
+              <p>Sesampainya di sana, panitia hanya menggeleng pelan.</p>
+              <p>&quot;Maaf ya. Pendaftaran ditutup jam dua tadi.&quot;</p>
+              <p>Nicholass melihat jam di ponselnya.</p>
+              <p>14.30.</p>
+              <p>&quot;Tapi, Kak... kami habis kelas.&quot;</p>
+              <p>Panitia tersenyum meminta maaf.</p>
+              <p>&quot;Aturannya memang begitu.&quot;</p>
+              <p>Wajah Nicholass langsung berubah lesu.</p>
+              <p>Baru saja mereka hendak berbalik, seorang mahasiswi menghampiri panitia sambil membawa beberapa lembar formulir.</p>
+              <p>&quot;Kak, tiga peserta yang daftar kemarin mengundurkan diri.&quot;</p>
+              <p>Panitia itu tampak berpikir sejenak.</p>
+              <p>&quot;Serius?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Ia kembali menoleh ke arah Nicholass dan kedua sahabatnya.</p>
+              <p>&quot;Kalau begitu... kalian bertiga masih bisa ikut. Kebetulan kuotanya pas.&quot;</p>
+              <p>Mata Nicholass langsung berbinar.</p>
+              <p>&quot;Beneran, Kak?!&quot;</p>
+              <p>&quot;Tuhan emang baik banget berpihak kali ini&quot;</p>
+              <p>&quot;Iya. Tapi harus serius ya.&quot;</p>
+              <p>Nicholass mengangguk berkali-kali.</p>
+              <p>&quot;Siap!&quot;</p>
+              <p>Jonathan menepuk dahinya.</p>
+              <p>&quot;Gua gak nyangka bakal ikut ginian gara-gara lo.&quot;</p>
+              <p>Elrick tertawa.</p>
+              <p>&quot;Udah terlanjur. Jalanin aja.&quot;</p>
+              <p>Hari-hari berikutnya berubah menjadi rutinitas yang melelahkan.</p>
+              <p>Pagi mereka kuliah.</p>
+              <p>Sore hingga malam mereka menghabiskan waktu di ruang latihan.</p>
+              <p>Latihan vokal.</p>
+              <p>Dance.</p>
+              <p>Koreografi.</p>
+              <p>Public speaking.</p>
+              <p>Hingga kerja sama tim. Meski mereka hanya tampil menampilkan cover karya idol yg sebenarnya, namun itu cukup suli untuk mereka lakukan dengan benar benar sempurna.0</p>
+              <p>Tak terasa, dua bulan berlalu begitu cepat.</p>
+              <p>Satu per satu peserta mulai gugur hingga hanya menyisakan kandidat terbaik.</p>
+              <p>Hanya akan ada 5 orng terbaik dalam 1 grup band kampus nantinya.</p>
+              <p>Di tengah semua latihan itu, Nicholass semakin sering bertemu Liu.</p>
+              <p>Bahkan saat audisi duet diumumkan, tanpa berpikir panjang ia langsung menghampiri Liu.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>Liu menoleh. &quot;Hm?&quot;</p>
+              <p>&quot;Partner gua, ya?&quot;</p>
+              <p>Liu tampak berpikir beberapa detik.</p>
+              <p>&quot;Kalau lo gak keberatan.&quot;</p>
+              <p>&quot;Mana mungkin gua keberatan.&quot;</p>
+              <p>Sejak hari itu mereka menjadi pasangan duet selama proses seleksi.</p>
+              <p>Bagi Liu, itu hanyalah kerja sama sebagai rekan satu tim.</p>
+              <p>Namun bagi Nicholass...</p>
+              <p>Setiap latihan terasa seperti kencan.</p>
+              <p>Suatu sore, setelah latihan dance selesai, seluruh anggota Tim Music beristirahat.</p>
+              <p>Napas mereka masih tersengal akibat koreografi yang cukup menguras tenaga.</p>
+              <p>Nicholass membuka galeri ponselnya sambil tersenyum puas.</p>
+              <p>&quot;Liu!&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Ayo post ini dulu di story akun official Tim Music.&quot;</p>
+              <p>Ia menunjukkan video latihan dance mereka berdua.</p>
+              <p>Liu melihat sekilas layar ponsel itu.</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>&quot;Serius?&quot;</p>
+              <p>&quot;Iya.&quot; Liu mengangguk kecil.</p>
+              <p>&quot;Biar nanti gua yang bilang ke Kak Gea.&quot;</p>
+              <p>Ketua Tim Music itu memang mengurus seluruh media sosial organisasi.</p>
+              <p>&quot;Kalau udah disetujuin baru dipost.&quot;</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>Setelah mengatakan itu, Liu langsung berjalan meninggalkan ruang latihan.</p>
+              <p>Nicholass hanya berdiri memandangi punggungnya.</p>
+              <p>Sampai sosok itu benar-benar menghilang di balik pintu.</p>
+              <p>Beberapa detik kemudian...</p>
+              <p>&quot;YESSS!&quot;</p>
+              <p>Ia melompat kecil sambil mengepalkan tangan. &quot;Gua seneng banget!&quot;</p>
+              <p>Jonathan yang melihat dari pojok ruangan hanya geleng-geleng kepala. &quot;Kasmaran tingkat dewa.&quot;</p>
+              <p>Malam beberapa malam setelahnya.</p>
+              <p>Liu baru saja selesai mandi setelah pulang latihan.</p>
+              <p>Ia mengambil segelas air putih sebelum merebahkan diri di atas kasur.</p>
+              <p>Saat membuka media sosial, notifikasi baru langsung muncul.</p>
+              <p>@officialmusic.UX menandai Anda dalam sebuah postingan.</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>Liu membuka unggahan tersebut.</p>
+              <p>Video dance latihan sore tadi berhasil diunggah.</p>
+              <p>Di bagian bawah tertulis,</p>
+              <p>&quot;Mari terus bekerja keras dan berlatih bersama.&quot;</p>
+              <p>dan... namanya ikut ditandai. Liu hampir saja tersedak air minumnya.</p>
+              <p>&quot;Jir...&quot;</p>
+              <p>&quot;Kok gua di-tag?&quot;</p>
+              <p>&quot;Padahal dia ngedance sendiri.&quot;</p>
+              <p>Ia mengerjapkan mata beberapa kali, masih bingung.</p>
+              <p>Namun tanpa sadar... Sudut bibirnya sedikit terangkat.</p>
+              <p>Tiga minggu berlalu.</p>
+              <p>Kini hampir setiap hari Nicholass dan Liu menghabiskan waktu bersama.</p>
+              <p>Mereka berlatih.</p>
+              <p>Berdiskusi.</p>
+              <p>Bercanda.</p>
+              <p>Sesekali makan bersama setelah latihan selesai.</p>
+              <p>Tak terasa, hanya tersisa satu minggu lagi sebelum penentuan anggota resmi Tim Music kampus.</p>
+              <p>Sebulan berikutnya akan menjadi masa persiapan mereka tampil di berbagai acara kampus sebagai wajah baru promosi universitas dan tampil di beberapa event kampus.</p>
+              <p>Suatu pagi, Nicholass berdiri di depan Gedung Fakultas Pendidikan dan Hukum.</p>
+              <p>Di belakangnya, Jonathan dan Elrick ikut berdiri sambil memasang wajah usil.</p>
+              <p>&quot;Lo berdua ngapa ngikutin mulu sih?&quot; Nicholass menoleh kesal.</p>
+              <p>Jonathan mengangkat bahu. &quot;Curiga lo mau kabur kelas.&quot;</p>
+              <p>&quot;Ngawur.&quot;</p>
+              <p>Belum sempat mereka berdebat lagi, sosok Liu keluar dari gedung.</p>
+              <p>Mata Nicholass langsung berbinar. &quot;Eh... eh... Liu!&quot;</p>
+              <p>Liu menghampiri mereka.</p>
+              <p>&quot;Pagi.&quot;</p>
+              <p>&quot;Pagi.&quot;</p>
+              <p>Nicholass menggaruk tengkuknya.</p>
+              <p>&quot;Anu... nanti sore latihan lagi, kan?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Mau mampir ke kos gua gak? Sekalian makan malam.&quot;</p>
+              <p>Liu terdiam beberapa saat.</p>
+              <p>Ia tampak berpikir cukup lama hingga membuat Jonathan dan Elrick ikut menunggu jawabannya.</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>Nicholass hampir saja melonjak kegirangan.</p>
+              <p>&quot;Bener?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Jonathan dan Elrick saling pandang.</p>
+              <p>Mereka benar-benar tidak menyangka ajakan itu diterima.</p>
+              <p>Kedua sahabat nicholass menggodanya dengan mengenggol bahu nicholass. “ciee cieee.. ekhem” ucap keduanya.</p>
+              <p>Saat petang, setelah latihan mereka benar-benar pergi ke kost nicholass.</p>
+              <p>Belum sempat mereka berjalan jauh, seorang anak laki-laki menghampiri Liu.</p>
+              <p>&quot;Kak!&quot; Liu menoleh.</p>
+              <p>&quot;Eh, Ryan. Kok di sini?&quot;</p>
+              <p>&quot;Jalan aja. Mau ketemu pacar.&quot;</p>
+              <p>Liu terkekeh. &quot;Masih kecil pacaran mulu.&quot;</p>
+              <p>Ryan kemudian memperhatikan Nicholass. &quot;Ini siapa? pacar baru kakak?&quot;</p>
+              <p>Belum sempat Liu menjawab... Nicholass lebih dulu menyeringai.</p>
+              <p>&quot;Iya, soon. Gua pacarnya kakak lo.&quot; Ryan langsung memasang wajah jahil.</p>
+              <p>&quot;Oh... kakak belum ada status apa-apa udah mau ngapa-ngapain di kostnya ya? Bilangin Mama ah.&quot;</p>
+              <p>&quot;Ngawur kamu.&quot; Liu langsung mencubit pelan lengan adiknya.</p>
+              <p>Nicholass ikut mendengus. &quot;Jauh-jauh lo, anak kecil. Kita mau mesra-mesraan.&quot;</p>
+              <p>Ryan menjulurkan lidah.</p>
+              <p>&quot;Lo yang jauh-jauh. Dia kakak gua. Temen kok mesra mesraan&quot; Ia kembali menoleh ke Liu.</p>
+              <p>&quot;Kak, hati-hati. Nih orang aneh.&quot;</p>
+              <p>&quot;Hoi!&quot;</p>
+              <p>Ryan langsung berlari sambil tertawa. Nicholass refleks hendak mengejarnya. Namun Liu buru-buru menahan lengannya.</p>
+              <p>&quot;Udah, Nic.&quot; Liu tersenyum kecil.</p>
+              <p>&quot;Jadi gak ke rumah lo?&quot; Seketika rasa kesal Nicholass menghilang.</p>
+              <p>&quot;Jadi dong.&quot;</p>
+              <p>Malam itu... Kost Nicholass dipenuhi aroma popcorn yang baru matang.</p>
+              <p>Televisi menyala pelan.</p>
+              <p>Sebuah film komedi menjadi teman mereka menghabiskan malam.</p>
+              <p>Beberapa kali Nicholass justru lebih sibuk memperhatikan wajah Liu daripada layar televisi. Hingga akhirnya...</p>
+              <p>Ia mengecilkan suara televisi.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Yaudah...&quot;</p>
+              <p>&quot;Kita pacaran aja, yuk.&quot;</p>
+              <p>&quot;Uhuk!&quot;</p>
+              <p>Liu yang sedang memakan popcorn langsung tersedak.</p>
+              <p>Ia menoleh dengan mata membulat.</p>
+              <p>&quot;Ini... beneran gak?&quot;</p>
+              <p>&quot;Apa lo lagi main-main?&quot;</p>
+              <p>Nicholass tertawa kecil. &quot;Beneran, lah.&quot;</p>
+              <p>Ia menyenggol pelan bahu Liu. &quot;Atau... maunya langsung nikah aja?&quot;</p>
+              <p>Pipi Liu seketika memerah. Ia memalingkan wajahnya beberapa saat.</p>
+              <p>Ruangan itu mendadak hening. Nicholass mulai gugup.</p>
+              <p>&quot;Hey...&quot;</p>
+              <p>&quot;Jadi gimana?&quot;</p>
+              <p>&quot;Gua boleh dapet kesempatan gak? Mau jadi pacar gua gak?&quot;</p>
+              <p>Beberapa detik berlalu.</p>
+              <p>Liu akhirnya menoleh kembali. Senyum kecil terukir di wajahnya.</p>
+              <p>&quot;Iya...&quot;</p>
+              <p>&quot;Iya, Mau.&quot;</p>
+              <p>Seolah mendapat jawaban yang telah lama ia tunggu, Nicholass langsung berdiri sambil melompat kegirangan.</p>
+              <p>&quot;YESSS!&quot;</p>
+              <p>Tanpa berpikir panjang, ia mengecup bibir Liu sekilas. Liu membeku di tempat. Wajahnya berubah merah padam.</p>
+              <p>Sementara Nicholass masih bersorak seperti anak kecil yang baru memenangkan perlombaan. &quot;Yes!&quot;</p>
+              <p>&quot;Gua berhasil!&quot;</p>
+              <p>Liu menutup wajahnya dengan kedua tangan sambil tertawa malu. &quot;Lo...&quot;</p>
+              <p>&quot;Berisik banget.&quot;</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-1">Bab 1</a><a class="primary-button" href="#chapter-3">Bab 3</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-3">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 03</p>
+            <h2>Bab 3</h2>
+              <p>Sejak malam itu...</p>
+              <p>Sejak kalimat &quot;Kita pacaran aja, yuk.&quot; akhirnya mendapat jawaban &quot;Iya, mau.&quot;</p>
+              <p>Hidup Nicholass berubah. Bukan karena ada sesuatu yang luar biasa.</p>
+              <p>Justru karena hal-hal sederhana yang sebelumnya terasa biasa, kini berubah menjadi alasan untuk tersenyum setiap hari.</p>
+              <p>Pagi itu, alarm di ponselnya baru saja berbunyi.</p>
+              <p>Dengan mata yang masih setengah tertutup, Nicholass langsung meraih ponselnya. Satu notifikasi muncul di layar.</p>
+              <p>My Bella 🤍</p>
+              <p>«Selamat pagi. Jangan lupa sarapan.»</p>
+              <p>Melihat nama kontak itu saja sudah cukup membuat sudut bibir Nicholass terangkat.</p>
+              <p>&quot;My Bella...&quot;</p>
+              <p>Ia tersenyum kecil sambil mengusap pelan layar ponselnya. Entah sejak kapan, menurutnya Liu selalu terlihat begitu cantik. Bukan cantik yang berlebihan. Melainkan cantik yang menenangkan. Tatapannya teduh. Senyumnya hangat. Dan semakin lama mengenalnya... Nicholass justru semakin gemas sendiri. Meski ia tau usia mereka berjarak 2 tahun, dan liu lebih tua namun itu bukan masalah bagi mereka.</p>
+              <p>Ia segera membalas.</p>
+              <p>«Pagi juga, My Bella.»</p>
+              <p>«Hari ini jangan lupa senyum ya. Biar nicho tambah semangat»</p>
+              <p>Tak lama kemudian... Balasan masuk.</p>
+              <p>«Kalau ketemu Nicho, kayaknya senyum terus soalnya Bahagia terus.»</p>
+              <p>Nicholass langsung menutup wajahnya dengan bantal.</p>
+              <p>&quot;Ya ampun...&quot;</p>
+              <p>&quot;Lucu banget sih.&quot;</p>
+              <p>Begitu sampai di kampus, Jonathan dan Elrick langsung menghampirinya.</p>
+              <p>&quot;Oi.&quot;</p>
+              <p>&quot;Kok senyum mulu dari tadi?&quot; Nicholass hanya memasukkan ponselnya ke saku.</p>
+              <p>&quot;Gak kenapa-kenapa.&quot; Jonathan mengangkat sebelah alis.</p>
+              <p>&quot;HP sini.&quot;</p>
+              <p>&quot;Gak.&quot;</p>
+              <p>&quot;Curiga.”</p>
+              <p>Belum sempat Nicholass menghindar, Elrick lebih dulu mengambil ponselnya.</p>
+              <p>Layar menyala. Nama kontak paling atas langsung terlihat.</p>
+              <p>My Bella 🤍</p>
+              <p>Jonathan langsung memukul pelan bahu Nicholass.</p>
+              <p>&quot;ASTAGA!&quot;</p>
+              <p>&quot;My Bella?&quot;</p>
+              <p>&quot;Seriusan?&quot; Elrick ikut tertawa.</p>
+              <p>&quot;Ini orang udah parah.&quot;</p>
+              <p>Nicholass merebut kembali ponselnya. &quot;Emang kenapa?&quot;</p>
+              <p>&quot;Dulu isi chat lo cuma dosen sama tugas, sama…. Hal gak jelas.&quot;</p>
+              <p>&quot;Sekarang isinya MY BELLA.&quot; Ucap Jonathan dan elrick bersmaan sambal menegaskan kata my bella.</p>
+              <p>Nicholass tersenyum santai. &quot;Soalnya emang lebih penting my bella.&quot;</p>
+              <p>Jonathan menatap Elrick.</p>
+              <p>&quot;Fix.&quot;</p>
+              <p>&quot;Udah gak bisa diselamatin.&quot;</p>
+              <p>Rutinitas Tim Music kembali berjalan.</p>
+              <p>Pagi kuliah.</p>
+              <p>Sore latihan.</p>
+              <p>Malam evaluasi.</p>
+              <p>Latihan demi latihan membuat seluruh anggota semakin akrab. Mereka yg lolos adalah Nicholass dan dua sahabatnya beserta liu dan 1 sahabatnya. Takdir memang sangat baik pada mereka.</p>
+              <p>Begitu untuk dengan Nicholass dan Liu. Mereka semakin dekat. Meski kini mereka resmi berpacaran...</p>
+              <p>Keduanya tetap bersikap profesional selama latihan.</p>
+              <p>Kalau Nicholass salah nada...</p>
+              <p>Liu akan langsung membenarkan.</p>
+              <p>Kalau Liu lupa gerakan...</p>
+              <p>Nicholass akan mengulanginya bersama tanpa mengeluh. Mereka saling mendukung. Tanpa pernah saling menjatuhkan.</p>
+              <p>Beberapa anggota tim mulai menyadari perubahan kecil itu.</p>
+              <p>&quot;Eh...&quot;</p>
+              <p>&quot;Menurut lo Liu berubah gak?&quot;</p>
+              <p>&quot;Sumpah.&quot;</p>
+              <p>&quot;Dulu dia cool banget.&quot;</p>
+              <p>&quot;Sekarang masih cool sih...&quot;</p>
+              <p>&quot;Tapi lebih sering senyum.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Terus kalau sama Nicholass...&quot;</p>
+              <p>&quot;Keliatan manis banget.&quot;</p>
+              <p>&quot;Lucu ya.&quot;</p>
+              <p>&quot;Padahal biasanya mukanya datar.&quot;</p>
+              <p>Mereka tertawa pelan.</p>
+              <p>Sementara Liu sama sekali tidak menyadari dirinya sedang menjadi bahan pembicaraan.</p>
+              <p>Baginya... Ia hanya sedang menjalani hari-hari seperti biasa.</p>
+              <p>Namun bagi Nicholass... Setiap ekspresi Liu selalu berhasil membuat jantungnya bekerja sedikit lebih cepat.</p>
+              <p>Selesai latihan, Kak Gea mengumpulkan seluruh anggota.</p>
+              <p>&quot;Hari ini dokumentasinya bagus.&quot;</p>
+              <p>&quot;Nanti bakal di-upload ke akun official MINBA (organisasi minat bakat kampus) kampus.&quot;</p>
+              <p>&quot;Yang mau repost silakan.&quot;</p>
+              <p>Belum lima menit setelah unggahan dipublikasikan... Story Instagram Nicholass sudah penuh.</p>
+              <p>Foto latihan.</p>
+              <p>Video dance.</p>
+              <p>Cuplikan duet vokal.</p>
+              <p>Semuanya diunggah ulang.</p>
+              <p>Dan...</p>
+              <p>Di setiap unggahan itu selalu ada satu nama yang ditandai.</p>
+              <p>@Liu.Nymph</p>
+              <p>Caption-nya pun tidak pernah jauh berbeda.</p>
+              <p>«Partner favorit.»</p>
+              <p>«Hari ini juga seru.»</p>
+              <p>«Besok latihan lagi ya.. Kerja bagus hari ini Bersama partner favorit»</p>
+              <p>Tak butuh waktu lama.</p>
+              <p>Liu selalu membalas.</p>
+              <p>Kadang hanya dengan emoji.</p>
+              <p>Kadang membalas jahil.</p>
+              <p>Kadang malah menggoda balik.</p>
+              <p>«Rajin banget tag Liu.»</p>
+              <p>«Biar semua orang tahu kalau partnerku keren.»</p>
+              <p>«Cuma partner?»</p>
+              <p>«...ya sama pacar.»</p>
+              <p>Nicholass langsung tersenyum lebar melihat balasan itu. Jonathan yang kebetulan berada di sebelahnya hanya bisa menghela napas.</p>
+              <p>&quot;Gua nyesel buka story lo.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Isinya kalian berdua semua.&quot;</p>
+              <p>&quot;Ya emang.&quot;</p>
+              <p>&quot;Biar orang tahu.&quot;</p>
+              <p>&quot;Tau apa?&quot;</p>
+              <p>&quot;Kalau Liu pacar gua.&quot;</p>
+              <p>&quot;Anjir...&quot;</p>
+              <p>Malam selalu menjadi waktu favorit mereka.</p>
+              <p>Bukan karena pergi berkencan.</p>
+              <p>Bukan juga karena jalan-jalan.</p>
+              <p>Melainkan karena satu kebiasaan sederhana.</p>
+              <p>Evaluasi hari.</p>
+              <p>Setelah mandi.</p>
+              <p>Setelah semua pekerjaan selesai.</p>
+              <p>Mereka akan selalu saling menelepon sebelum tidur.</p>
+              <p>&quot;Capek?&quot; tanya Nicholass.</p>
+              <p>&quot;Capek.&quot;</p>
+              <p>&quot;Tapi seneng.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Soalnya seharian sama liu. Tp sekarang udah kangen&quot;</p>
+              <p>Liu terkekeh pelan. &quot;Padahal tadi hampir seharian bareng.&quot;</p>
+              <p>&quot;Ya terus?&quot;</p>
+              <p>&quot;Baru pisah satu jam.&quot;</p>
+              <p>&quot;Emang gak boleh kangen?&quot;</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>Nicholass tersenyum sendiri. &quot;Kalau sama liu, limamenit aja rasanya lama.&quot;</p>
+              <p>&quot;Halah.&quot;</p>
+              <p>&quot;Bener.&quot;</p>
+              <p>&quot;Gombal.&quot;</p>
+              <p>&quot;Kan emang buat liu seorang.&quot;</p>
+              <p>Liu tertawa kecil. &quot;Kalau gitu besok latihan jangan telat.&quot;</p>
+              <p>&quot;Siap boss.&quot;</p>
+              <p>&quot;Nicho juga jangan lupa sarapan.&quot;</p>
+              <p>&quot;Iya, My Bella.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;My bella? Kok manggilnya gitu lagi?&quot;</p>
+              <p>&quot;Soalnya emang cantik.&quot;</p>
+              <p>&quot;Liu juga tahu.&quot;</p>
+              <p>&quot;Terus?&quot;</p>
+              <p>&quot;Ya makasih ganteng.&quot;</p>
+              <p>Nicholass langsung tertawa. Tanpa ia ketahui, Liu uga sedang tersenyum dengan wajah yang memerah.</p>
+              <p>&quot;Tuh kan.&quot;</p>
+              <p>&quot;Jago juga jawab gombalan.&quot;</p>
+              <p>&quot;Tergantung siapa yang ngomong.&quot;</p>
+              <p>&quot;Waduh...&quot;</p>
+              <p>&quot;Kena mental.&quot;</p>
+              <p>Mereka kembali tertawa bersama. Suasana hening beberapa saat. Namun hening yang terasa nyaman. Liu memecah keheningan itu lebih dulu.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Nicho yakin...&quot;</p>
+              <p>&quot;Mau punya hubungan sama Liu?&quot;</p>
+              <p>Nicholass tersenyum kecil. &quot;Loh?&quot;</p>
+              <p>&quot;Kenapa nanya gitu?&quot;</p>
+              <p>&quot;Gak tahu.&quot;</p>
+              <p>&quot;Cuma kepikiran aja.&quot;</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Iya?&quot;</p>
+              <p>&quot;Kalau nicho gak yakin...&quot;</p>
+              <p>&quot;Mana mungkin nicho ngejar liu sebrutal ini?&quot;</p>
+              <p>&quot;Lagian sekarang kita udah punya status.&quot;</p>
+              <p>&quot;Terus...&quot;</p>
+              <p>&quot;Apa lagi yang harus diraguin?&quot;</p>
+              <p>Liu terdiam. Lalu tersenyum tipis.</p>
+              <p>&quot;Iya juga...&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Liu masih gak nyangka.&quot;</p>
+              <p>&quot;Apanya?&quot;</p>
+              <p>&quot;Orang yang dulu nolak liu...&quot;</p>
+              <p>&quot;...&quot;</p>
+              <p>&quot;Sekarang malah jadi orang yang paling ugal-ugalan ngejar liu.&quot;</p>
+              <p>&quot;Ke mana-mana nyariin.&quot;</p>
+              <p>&quot;Rajin nge-tag.&quot;</p>
+              <p>&quot;Rajin ngajak makan.&quot;</p>
+              <p>&quot;Terus sekarang...&quot;</p>
+              <p>&quot;Berhasil dapetin liu.&quot;</p>
+              <p>Nicholass hanya tertawa kecil.</p>
+              <p>&quot;Hehe...&quot;</p>
+              <p>&quot;Iya ya...&quot;</p>
+              <p>&quot;Lagian...&quot;</p>
+              <p>&quot;Liu agak susah didapetin.&quot;</p>
+              <p>&quot;Memang sengaja.&quot;</p>
+              <p>&quot;Dasar.&quot;</p>
+              <p>Beberapa detik kembali berlalu.</p>
+              <p>Lalu Liu bertanya dengan suara jauh lebih pelan.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Sebenarnya...&quot;</p>
+              <p>&quot;Kenapa dulu nolak Liu?&quot;</p>
+              <p>Tawa Nicholass perlahan menghilang. Ia menarik napas panjang.</p>
+              <p>&quot;Nicho.. anu...&quot;</p>
+              <p>&quot;Sebenarnya ada alasannya.&quot;</p>
+              <p>Liu mengernyit penasaran. &quot;Alasan?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Memang...&quot;</p>
+              <p>&quot;Apa alasannya?&quot;</p>
+              <p>Nicholass kembali terdiam. Untuk pertama kalinya...</p>
+              <p>Ia merasa sudah waktunya membuka cerita yang selama ini ia simpan rapat.</p>
+              <p>Sebuah cerita...</p>
+              <p>Yang membuatnya menyesal telah membiarkan Liu menunggu begitu lama.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-2">Bab 2</a><a class="primary-button" href="#chapter-4">Bab 4</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-4">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 04</p>
+            <h2>Bab 4</h2>
+              <p>Suara napas keduanya masih terdengar samar dari balik sambungan telepon.</p>
+              <p>Tak ada yang berbicara. Bukan karena kehabisan topik. Melainkan karena keduanya sama-sama menikmati hening yang terasa nyaman.</p>
+              <p>Liu membiarkan keheningan itu beberapa saat.</p>
+              <p>Ia tahu, pertanyaannya barusan bukan pertanyaan yang mudah dijawab.</p>
+              <p>&quot;Nic...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Liu gak maksa.&quot;</p>
+              <p>&quot;Kalau Nicho belum siap cerita... gak apa-apa.&quot;</p>
+              <p>Nicholass tersenyum tipis. &quot;Enggak.&quot;</p>
+              <p>&quot;Nicho cuma lagi nyusun kata-katanya aja.&quot;</p>
+              <p>Ia mengembuskan napas pelan. &quot;Liu...&quot;</p>
+              <p>&quot;Iya?&quot;</p>
+              <p>&quot;Nicho cerita ya.&quot;</p>
+              <p>&quot;Siap.&quot;</p>
+              <p>&quot;Liu dengerin aja.&quot;</p>
+              <p>&quot;Selama ini...&quot;</p>
+              <p>&quot;...Nicho belum pernah cerita ke siapa-siapa soal ini.&quot;</p>
+              <p>Liu mengangguk kecil. Meski tahu Nicholass tak mungkin melihatnya.</p>
+              <p>&quot;Liu denger.&quot;</p>
+              <p>Nicholass kembali menarik napas panjang.</p>
+              <p>&quot;Sebelum kuliah...&quot;</p>
+              <p>&quot;Nicho udah punya pacar.&quot;</p>
+              <p>&quot;Lama.&quot;</p>
+              <p>&quot;Dari SMP.&quot;</p>
+              <p>&quot;Jonathan sama Elrick juga tahu.&quot;</p>
+              <p>&quot;Soalnya mereka berdua selalu ada dari dulu.&quot;</p>
+              <p>&quot;Mereka yang sering nemenin Nicho kalau lagi berantem.&quot;</p>
+              <p>&quot;Mereka juga yang selalu nyuruh Nicho sabar.&quot;</p>
+              <p>Suara Nicholass terdengar pelan.</p>
+              <p>&quot;Awalnya semuanya baik-baik aja.&quot;</p>
+              <p>&quot;Kita sering jalan.&quot;</p>
+              <p>&quot;Sering ngobrol.&quot;</p>
+              <p>&quot;Sering ketawa.&quot;</p>
+              <p>&quot;Sampai akhirnya...&quot;</p>
+              <p>&quot;...dia sibuk brorganisasi di sekolah.&quot;</p>
+              <p>&quot;Lingkungannya berubah.&quot;</p>
+              <p>&quot;Teman-temannya berubah.&quot;</p>
+              <p>&quot;Dia mulai sibuk ikut organisasi non-akademik yang lumayan bikin waktunya habis.&quot;</p>
+              <p>&quot;Nicho seneng.&quot;</p>
+              <p>&quot;Soalnya dia akhirnya nemuin tempat yang bikin dia berkembang.&quot;</p>
+              <p>&quot;Lama-lama...&quot;</p>
+              <p>&quot;Dia makin sibuk.&quot;</p>
+              <p>&quot;Nicho selalu coba ngerti.&quot;</p>
+              <p>&quot;Kalau dia gak bisa ketemu...&quot;</p>
+              <p>&quot;...Nicho yang nyamperin.&quot;</p>
+              <p>&quot;Kalau dia lagi capek...&quot;</p>
+              <p>&quot;...Nicho yang dengerin.&quot;</p>
+              <p>&quot;Kalau dia lagi butuh sesuatu...&quot;</p>
+              <p>&quot;...sebisa mungkin Nicho bantu.&quot;</p>
+              <p>&quot;Nicho pikir...&quot;</p>
+              <p>&quot;Kalau Nicho terus berusaha...&quot;</p>
+              <p>&quot;...hubungan ini bakal baik-baik aja.&quot;</p>
+              <p>Nicholass tersenyum pahit.</p>
+              <p>&quot;Ternyata...&quot;</p>
+              <p>&quot;...Nicho salah.&quot;</p>
+              <p>&quot;Liu tahu gak...&quot;</p>
+              <p>&quot;Hal yang paling capek dari sebuah hubungan itu apa?&quot;</p>
+              <p>Liu menjawab pelan. &quot;Apa?&quot;</p>
+              <p>&quot;Saat cuma satu orang yang terus berusaha.&quot;</p>
+              <p>Liu terdiam. Ia tahu kalimat itu bukan sekadar jawaban. Melainkan pengalaman.</p>
+              <p>&quot;Dia mulai sering upload story sama teman-teman organisasinya.&quot;</p>
+              <p>&quot;Nicho gak masalah.&quot;</p>
+              <p>&quot;Namanya juga teman.&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Lama-lama Nicho sadar.&quot;</p>
+              <p>&quot;Dia jauh lebih sering bersama salah satu teman cowoknya.&quot;</p>
+              <p>&quot;Mereka saling mention.&quot;</p>
+              <p>&quot;Saling tag.&quot;</p>
+              <p>&quot;Saling simpan sorotan Instagram.&quot;</p>
+              <p>Nicholass berhenti sejenak.</p>
+              <p>&quot;Bahkan...&quot;</p>
+              <p>&quot;...pakai tulisan &#x27;My 🤍&#x27;.&quot;</p>
+              <p>&quot;Nicho lihat semuanya.&quot;</p>
+              <p>&quot;Sesak?&quot; Liu bertanya hati-hati.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Tapi waktu itu Nicho masih terus nyari alasan.&quot;</p>
+              <p>&quot;Mungkin cuma teman dekat.&quot;</p>
+              <p>&quot;Mungkin Nicho aja yang kepikiran.&quot;</p>
+              <p>&quot;Mungkin emang budaya organisasi mereka.&quot;</p>
+              <p>Nicholass terkekeh pelan.</p>
+              <p>&quot;Lucu ya.&quot;</p>
+              <p>&quot;Padahal hati Nicho udah tahu.&quot;</p>
+              <p>&quot;Cuma kepala Nicho yang terus nyuruh buat percaya.&quot;</p>
+              <p>&quot;Lama-lama...&quot;</p>
+              <p>&quot;Nicho capek.&quot;</p>
+              <p>&quot;Bukan capek sayang.&quot;</p>
+              <p>&quot;Tapi capek berharap.&quot;</p>
+              <p>Keheningan kembali memenuhi sambungan telepon.</p>
+              <p>&quot;Nicho mulai banyak kenal orang.&quot;</p>
+              <p>&quot;Bukan buat balas dendam.&quot;</p>
+              <p>&quot;Bukan juga buat cari pengganti atau pelampiasan.&quot;</p>
+              <p>&quot;Nicho cuma pengen hidup Nicho gak muter di satu orang doang.&quot;</p>
+              <p>&quot;Terus liu nyatain perasaan ke nicho dan jelas nicho gak bisa terima. Maaf buat waktu itu. Semua kacau diluar dugaan nicho. Tapi 2 minggu setelah iu nicho tolak...&quot;</p>
+              <p>&quot;...ada seseorang.&quot;</p>
+              <p>&quot;Dia udah lama suka sama Nicho.&quot;</p>
+              <p>&quot;Sering nunggu.&quot;</p>
+              <p>&quot;Sering nyatain perasaannya.&quot;</p>
+              <p>&quot;Nicho selalu nolak.&quot;</p>
+              <p>&quot;Tapi dia tetap nunggu.&quot;</p>
+              <p>&quot;Nicho lagi kacau waktu itu.&quot;</p>
+              <p>&quot;Hubungan Nicho sama mantan...&quot;</p>
+              <p>&quot;...udah terasa seperti jalan di tempat.&quot;</p>
+              <p>&quot;Masih ada status.&quot;</p>
+              <p>&quot;Tapi rasanya...&quot;</p>
+              <p>&quot;...udah gak seperti pasangan.&quot;</p>
+              <p>&quot;Nicho sempat berpikir...&quot;</p>
+              <p>&quot;...mungkin membuka hati terlalu cepat bisa bikin semuanya terasa lebih ringan.&quot;</p>
+              <p>Nicholass mengembuskan napas panjang.</p>
+              <p>&quot;Itu keputusan yang salah.&quot;</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Nicho nyesel.&quot;</p>
+              <p>&quot;Soalnya bukannya selesai.&quot;</p>
+              <p>&quot;...Nicho malah bikin hati sendiri makin berantakan.&quot;</p>
+              <p>&quot;Laki-laki itu ternyata juga gak benar-benar hadir.&quot;</p>
+              <p>&quot;Dia datang kalau lagi butuh.&quot;</p>
+              <p>&quot;Kalau lagi bosan.&quot;</p>
+              <p>&quot;Kalau lagi kesepian.&quot;</p>
+              <p>&quot;Selebihnya...&quot;</p>
+              <p>&quot;...dia menghilang.&quot;</p>
+              <p>&quot;Dia gak pernah mau mengakui hubungan kami.&quot;</p>
+              <p>&quot;Nicho masih berusaha berpikir positif.&quot;</p>
+              <p>&quot;Mungkin dia takut.&quot;</p>
+              <p>&quot;Mungkin dia belum siap.&quot;</p>
+              <p>&quot;Sampai akhirnya...&quot;</p>
+              <p>&quot;...Nicho sadar.&quot;</p>
+              <p>&quot;Nicho cuma dijadiin tempat singgah.&quot;</p>
+              <p>Liu menggigit bibir bawahnya pelan. Dadanya terasa sedikit sesak mendengar cerita itu, namun juga bersyukur. Lelaki pilihannya ternyata sedang berusaha menjaga perasaanya saat itu.</p>
+              <p>&quot;Terus...&quot;</p>
+              <p>&quot;Gimana?&quot;</p>
+              <p>Beberapa detik berlalu.</p>
+              <p>&quot;Saat pengumuman SNBT keluar...&quot;</p>
+              <p>&quot;Nicho diterima di universitas ini.&quot;</p>
+              <p>&quot;Jonathan sama Elrick juga.&quot;</p>
+              <p>&quot;Kita bertiga akhirnya mutusin merantau bareng.&quot;</p>
+              <p>&quot;Nicho berpikir...&quot;</p>
+              <p>&quot;Ini waktunya mulai hidup baru.&quot;</p>
+              <p>&quot;Jadi...&quot;</p>
+              <p>&quot;Nicho mutusin hubungan itu.&quot;</p>
+              <p>&quot;Nicho bilang...&quot;</p>
+              <p>&quot;Nicho bakal kuliah jauh.&quot;</p>
+              <p>&quot;Nicho gak mau bikin kamu nunggu orang yang bahkan gak tahu bakal balik kapan.&quot;</p>
+              <p>&quot;Kita berpisah baik-baik.&quot;</p>
+              <p>&quot;Setelah itu...&quot;</p>
+              <p>&quot;...Nicho juga ketemu mantan cewek Nicho yang SMP itu.&quot;</p>
+              <p>&quot;Nicho bilang...&quot;</p>
+              <p>&quot;&#x27;Udahlah ya.&#x27;&quot;</p>
+              <p>&quot;&#x27;Kita temenan aja.&#x27;&quot;</p>
+              <p>&quot;&#x27;Hubungan ini udah gak bisa dipaksain lagi.&#x27;&quot;</p>
+              <p>&quot;&#x27;Nicho capek terus jadi satu-satunya yang berusaha.&#x27;&quot;</p>
+              <p>&quot;Dia sempat diem.&quot;</p>
+              <p>&quot;Dia juga gak mau kehilangan Nicho.&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;...dia akhirnya ngaku.&quot;</p>
+              <p>&quot;Kalau selama ini...&quot;</p>
+              <p>&quot;...dia terlalu sibuk sama dunianya sendiri.&quot;</p>
+              <p>&quot;Dan sejak hari itu...&quot;</p>
+              <p>&quot;...hubungan kami benar-benar selesai.&quot;</p>
+              <p>Nicholass mengembuskan napas lega.</p>
+              <p>&quot;Beberapa bulan kemudian...&quot;</p>
+              <p>&quot;Nicho pindah ke kota ini.&quot;</p>
+              <p>&quot;Mulai kuliah.&quot;</p>
+              <p>&quot;Mulai hidup baru di kota baru.&quot;</p>
+              <p>&quot;Dan...&quot;</p>
+              <p>&quot;...ketemu Liu lagi.&quot;</p>
+              <p>Di seberang telepon, Liu tersenyum kecil.</p>
+              <p>&quot;Jadi...&quot;</p>
+              <p>&quot;Waktu Liu nembak Nicho dulu...&quot;</p>
+              <p>&quot;Bukan karena Nicho gak suka Liu?&quot;</p>
+              <p>Nicholass langsung menggeleng, meski Liu tak bisa melihatnya.</p>
+              <p>&quot;Justru sebaliknya.&quot;</p>
+              <p>&quot;Liu terlalu berharga.&quot;</p>
+              <p>&quot;Nicho gak mau datang ke hidup Liu...&quot;</p>
+              <p>&quot;...dengan hati yang masih berantakan.&quot;</p>
+              <p>&quot;Nicho takut.&quot;</p>
+              <p>&quot;Takut tanpa sadar malah nyakitin Liu.&quot;</p>
+              <p>&quot;Liu terdiam cukup lama.&quot;</p>
+              <p>Kemudian terdengar tawa kecilnya.</p>
+              <p>&quot;Pantes...&quot;</p>
+              <p>&quot;Pantes sekarang Nicho ngejar Liu terus.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Soalnya sekarang Nicho udah siap.&quot;</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Terima kasih ya.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Karena masih mau nerima Nicho.&quot;</p>
+              <p>Liu tersenyum hangat.</p>
+              <p>&quot;Harusnya Liu yang bilang makasih.&quot;</p>
+              <p>&quot;Karena akhirnya...&quot;</p>
+              <p>&quot;...orang yang dulu nolak Liu.&quot;</p>
+              <p>&quot;Sekarang jadi pacar Liu.&quot;</p>
+              <p>Nicholass tertawa kecil. &quot;Hehe...&quot;</p>
+              <p>&quot;Iya juga.&quot;</p>
+              <p>Tak lama kemudian mereka saling mengucapkan selamat malam.</p>
+              <p>Panggilan berakhir.</p>
+              <p>Malam kembali sunyi.</p>
+              <p>Namun tanpa mereka sadari...</p>
+              <p>Beberapa hari lagi, masa lalu yang dikira telah selesai akan kembali muncul di hadapan mereka.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-3">Bab 3</a><a class="primary-button" href="#chapter-5">Bab 5</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-5">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 05</p>
+            <h2>Bab 5</h2>
+              <p>Beberapa hari telah berlalu sejak kejadian itu.Latihan Tim Music tetap berjalan seperti biasa. Tugas kuliah mulai berdatangan.</p>
+              <p>Sore itu, setelah latihan selesai lebih cepat, mereka memutuskan duduk santai di taman kampus.</p>
+              <p>Jonathan, Elrick, Liu, serta beberapa teman Tim Music mengobrol sambil menikmati minuman dingin. Suasana ramai. Sesekali terdengar gelak tawa.</p>
+              <p>Tak lama kemudian, salah satu teman mengajak Jonathan dan Elrick membeli camilan di minimarket depan kampus.</p>
+              <p>&quot;Nicho, Liu. Tunggu bentar ya.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Liu memilih tetap duduk di bangku taman.</p>
+              <p>Ia membuka ponselnya sambil menunggu mereka kembali. Angin sore berembus pelan. Semuanya terasa begitu tenang.</p>
+              <p>Sampai...</p>
+              <p>Seseorang berdiri tepat di hadapannya. Liu mengangkat kepala. Seketika ekspresinya berubah datar. &quot;...Rion.&quot;</p>
+              <p>Pria itu tersenyum tipis. &quot;Kangen.&quot;</p>
+              <p>Belum sempat Liu menjawab, Rion mengangkat dagunya perlahan agar wajah Liu menghadap ke arahnya. Liu langsung menepis tangan itu.</p>
+              <p>&quot;Ngapain ke sini?&quot;</p>
+              <p>&quot;Kita udah gak ada hubungan lagi.&quot;</p>
+              <p>Rion hanya tertawa kecil. &quot;Kata siapa?&quot;</p>
+              <p>&quot;Lo mutusin hubungan sama gua cuma gara-gara gua belum bisa publik hubungan kita.&quot;</p>
+              <p>&quot;Lagian...&quot;</p>
+              <p>&quot;Lo cerita ke temen-temen lo.&quot;</p>
+              <p>&quot;Sampai nama gua jelek di circle lo.&quot;</p>
+              <p>Liu menghela napas. &quot;Gua gak pernah jelekin lo.&quot;</p>
+              <p>&quot;Gua juga gak pernah nyuruh orang lain benci sama lo.&quot;</p>
+              <p>&quot;Tapi buktinya mereka semua berubah.&quot;</p>
+              <p>&quot;Itu urusan mereka.&quot;</p>
+              <p>&quot;Mereka nilai sendiri dari apa yang mereka lihat.&quot;</p>
+              <p>&quot;Bukan karena hasutan gua.&quot;</p>
+              <p>Rion mendecak pelan. &quot;Jadi sekarang salah gua?&quot;</p>
+              <p>&quot;Salah siapa lagi? Apa gua?&quot; Nada suara Liu mulai berubah lebih tegas.</p>
+              <p>&quot;Lo masih nanya? Selama hubungan kita...&quot;</p>
+              <p>&quot;Lo datang kalau lagi butuh, Kalau lagi kesepian, Kalau lagi bosan. Tapi setiap gua minta kepastian...&quot;</p>
+              <p>&quot;Lo selalu menghindar. Gua tetap bertahan. Gua tetap nunggu. Dan yang gua dapet...&quot;</p>
+              <p>&quot;...cuma alasan.&quot;</p>
+              <p>Rion mendekat selangkah.</p>
+              <p>&quot;Ya terus?&quot;</p>
+              <p>&quot;Gua kan cuma belum siap.&quot;</p>
+              <p>&quot;Belum siap...&quot;</p>
+              <p>&quot;Atau emang gak pernah niat?&quot;</p>
+              <p>Rion terdiam. Liu menatapnya tanpa gentar.</p>
+              <p>&quot;Asal lo tahu.&quot;</p>
+              <p>&quot;Hubungan lo yang selalu kandas itu...&quot;</p>
+              <p>&quot;...bukan karena orang lain.&quot;</p>
+              <p>&quot;Tapi karena sikap lo sendiri. Lo selalu nyari pembenaran, tapi gak pernah mau ngaca.&quot;</p>
+              <p>&quot;Makanya...&quot;</p>
+              <p>&quot;Gua juga gak betah.&quot;</p>
+              <p>Rion tersenyum sinis. &quot;Gua datang baik-baik.&quot;</p>
+              <p>&quot;Lo malah ngegas.&quot;</p>
+              <p>&quot;Yaudah.&quot;</p>
+              <p>&quot;Gua minta maaf.&quot;</p>
+              <p>Liu menggeleng pelan. &quot;Ada ya orang minta maaf sambil nyalahin orang lain?&quot;</p>
+              <p>&quot;Itu namanya bukan minta maaf.&quot;</p>
+              <p>Rion menghela napas panjang.</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>&quot;Gua minta maaf.&quot;</p>
+              <p>&quot;Maaf kalau dulu gua nyakitin lo.&quot;</p>
+              <p>Liu menatapnya beberapa detik.</p>
+              <p>&quot;Gua maafin.&quot;</p>
+              <p>&quot;Tapi bukan berarti gua mau balik lagi.&quot;</p>
+              <p>&quot;Gua juga minta maaf...&quot;</p>
+              <p>&quot;Kalau dulu terlalu maksa hubungan itu.&quot;</p>
+              <p>&quot;Jadi sekarang...&quot;</p>
+              <p>&quot;Jangan ganggu hidup gua lagi.&quot;</p>
+              <p>&quot;Gua udah punya pacar.&quot;</p>
+              <p>Rion tersenyum tipis.</p>
+              <p>&quot;Masalah kita belum selesai.&quot;</p>
+              <p>&quot;Lo harus jelasin ke temen-temen lo.&quot;</p>
+              <p>&quot;Bilang kalau gua gak seburuk itu.&quot;</p>
+              <p>&quot;Gua gak bisa.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Karena mereka lihat sendiri, bukan dari cerita gua. Kalau lo mau bersihin nama lo...&quot;</p>
+              <p>&quot;Buktiin sendiri, bukan nyuruh gua.&quot;</p>
+              <p>Rion tiba-tiba meraih pergelangan tangan Liu. Liu langsung menepisnya. Namun beberapa detik kemudian...</p>
+              <p>Rion justru menarik pinggang Liu agar mendekat.</p>
+              <p>&quot;Lepas.&quot;</p>
+              <p>&quot;Rion.&quot;</p>
+              <p>&quot;Lepasin.&quot;</p>
+              <p>&quot;Liu.. Gua kangen.&quot; Ucap Rion.</p>
+              <p>&quot;Lepas.&quot;</p>
+              <p>&quot;Gua gak bisa.&quot;</p>
+              <p>Liu berusaha melepaskan diri. Tetapi tenaga Rion jauh lebih besar.</p>
+              <p>Di kejauhan...</p>
+              <p>Nicholass baru saja kembali membawa camilan. Langkahnya terhenti.</p>
+              <p>Matanya langsung tertuju pada sosok Liu yang sedang ditahan seseorang.</p>
+              <p>&quot;Tunggu. Nanti malah makin ribut.&quot; Gumamnya.</p>
+              <p>Nicholass mengepalkan kedua tangannya. Rahangnya mengeras. Ia menarik napas panjang berulang kali, berusaha menahan emosinya.</p>
+              <p>Sementara itu...</p>
+              <p>Rion masih menatap Liu.</p>
+              <p>&quot;Gua cuma pengen satu kesempatan lagi.&quot;</p>
+              <p>&quot;Gak ada.&quot;</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Gua serius, gua berubah.&quot;</p>
+              <p>Liu tersenyum tipis.</p>
+              <p>&quot;Kalau emang berubah yaudah berubah aja, tapi kalua mau kesempaannya...&quot;</p>
+              <p>&quot;Coba minta izin sama pacar gua.&quot;</p>
+              <p>Rion mengernyit.</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>Liu melirik ke belakang Rion.</p>
+              <p>&quot;Oh...&quot;</p>
+              <p>&quot;Silakan, Izin sendiri ke pacar gua.&quot;</p>
+              <p>Rion perlahan menoleh.</p>
+              <p>Di belakangnya...</p>
+              <p>Nicholass berdiri dengan tatapan dingin. Tak sepatah kata pun keluar. Namun sorot matanya sudah cukup menjelaskan semuanya. Rion perlahan melepaskan rangkulannya dari pinggang Liu. Suasana mendadak hening. Ia mencoba tersenyum.</p>
+              <p>&quot;Oh...&quot;</p>
+              <p>&quot;Hai.&quot;</p>
+              <p>Rion menjulurkan tangan.</p>
+              <p>Nicholass menatap tangan itu beberapa detik, lalu menepisnya begitu saja.</p>
+              <p>Tak ada senyum.</p>
+              <p>Tak ada sapaan.</p>
+              <p>Hanya tatapan tajam yang sulit dijelaskan. Rion mengangkat kedua bahunya.</p>
+              <p>&quot;Yaudah.&quot;</p>
+              <p>&quot;Gua pergi.&quot;</p>
+              <p>Ia berbalik meninggalkan mereka.</p>
+              <p>Saat sosoknya mulai menjauh...</p>
+              <p>Baru terdengar gumaman pelan dari bibir Nicholass.</p>
+              <p>&quot;...Pecundang.&quot;</p>
+              <p>Liu menoleh.</p>
+              <p>Tatapannya perlahan turun. Ia melihat tangan kirinya. Sejak tadi...</p>
+              <p>Nicholass menggenggamnya sangat erat. Begitu erat hingga jemari Nicholass sedikit bergetar. Liu kembali menatap wajah kekasihnya.</p>
+              <p>&quot;Nicho... Nicho marah ya?&quot;</p>
+              <p>&quot;Nicho lihat semuanya?&quot;</p>
+              <p>Nicholass mengangguk pelan.</p>
+              <p>&quot;O... Iya. Tapi bukan salah Liu.&quot; Jawab Nicholass lalu menatap mata liu.</p>
+              <p>&quot;Maaf ya.. Liu bakal tetap milih Nicho. Apapun yang terjadi. Di kehidupan mana pun. Jadi Nicho.......&quot;</p>
+              <p>Belum sempat Liu menyelesaikan kalimatnya...</p>
+              <p>Nicholass mengangkat telunjuknya, lalu menyentuh lembut bibir Liu.</p>
+              <p>&quot;Shh...&quot;</p>
+              <p>&quot;Gak boleh minta maaf. Bukan salah Liu.&quot;</p>
+              <p>Liu mengangguk pelan. Namun ia masih bisa merasakan...</p>
+              <p>Tangan Nicholass masih sedikit gemetar.</p>
+              <p>&quot;E-eh...&quot;</p>
+              <p>&quot;Nicho marah banget ya?&quot;</p>
+              <p>&quot;Dikit.&quot; Jawabnya.</p>
+              <p>Jawaban itu terdengar singkat. Namun cukup membuat Liu memahami isi hati Nicholass.</p>
+              <p>&quot;Nanti... Liu temenin Nicho ya?&quot;</p>
+              <p>Nicholass menggeleng pelan.</p>
+              <p>&quot;Enggak.&quot;</p>
+              <p>&quot;Jonathan sama Elrick pasti udah nunggu. Liu jalan dulu sama mereka, Nicho cuma butuh nenangin diri sebentar.&quot; Ucap Nichoass sambal memberikan plastic berisi camilan yang tadi ia janjikan.</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Bukan salah Liu, tenang aja Nicho gak bakal kenapa-kenapa.&quot;</p>
+              <p>Nicholass tersenyum tipis. Lalu mengecup lembut dahi Liu.</p>
+              <p>&quot;Cepat nyusul ya.&quot; Ucap liu sambal menatap matanya.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Setelah memastikan Liu tersenyum kembali, Nicholass perlahan melepaskan genggaman tangan mereka. Ia berbalik. Melangkah pergi seorang diri.</p>
+              <p>Sementara Liu hanya memandangi punggungnya yang semakin jauh.</p>
+              <p>Entah kenapa...</p>
+              <p>Untuk pertama kalinya sejak mereka berpacaran...</p>
+              <p>Liu merasa...</p>
+              <p>Amarah yang disimpan Nicholass jauh lebih besar daripada yang ia tunjukkan.</p>
+              <p>Dan itu justru membuatnya semakin khawatir.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-4">Bab 4</a><a class="primary-button" href="#chapter-6">Bab 6</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-6">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 06</p>
+            <h2>Bab 6</h2>
+              <p>Langit malam kembali menyelimuti kota.</p>
+              <p>Seperti biasanya...</p>
+              <p>Setelah mandi dan menyelesaikan semua kegiatan hari itu, ponsel Nicholass kembali berdering.</p>
+              <p>Di layar tertulis satu nama yang selalu berhasil membuat sudut bibirnya terangkat.</p>
+              <p>My Bella 🤍</p>
+              <p>Senyumnya langsung mengembang.</p>
+              <p>&quot;Halo, sayang.&quot;</p>
+              <p>&quot;Halo.&quot;</p>
+              <p>Suara Liu terdengar lebih pelan dari biasanya.</p>
+              <p>&quot;Nicho udah baikan?&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Tadi...&quot;</p>
+              <p>&quot;Liu nungguin Nicho… Tapi Nicho gak balik lagi, Jonathan sama Elrick bilang Nicho pulang duluan. Apa masih marah?&quot;</p>
+              <p>Nicholass menggeleng pelan, meski tahu Liu tak bisa melihatnya.</p>
+              <p>&quot;Enggak.&quot;</p>
+              <p>&quot;Beneran?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Nicho cuma...&quot;</p>
+              <p>&quot;...emosinya lagi gak stabil. Lihat kejadian tadi...&quot;</p>
+              <p>&quot;Nicho takut kalau tetap di sana. Nanti malah kebawa emosi, Jadi Nicho pulang. Mandi, terus rebahan. Maaf ya...&quot;</p>
+              <p>&quot;Liu jadi kepikiran.&quot;</p>
+              <p>Liu tersenyum kecil.</p>
+              <p>&quot;Liu kira Nicho marah sama Liu.&quot;</p>
+              <p>&quot;Nicho mana mungkin marah sama Liu.&quot;</p>
+              <p>&quot;Yang bikin Nicho kesel...&quot;</p>
+              <p>&quot;...orang tadi.&quot;</p>
+              <p>Keheningan sejenak memenuhi panggilan itu.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Liu boleh cerita?&quot;</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>&quot;Dulu...&quot;</p>
+              <p>&quot;Liu memang pernah pacaran sama dia.&quot;</p>
+              <p>&quot;Namanya Rion.&quot;</p>
+              <p>Nicholass memilih diam.</p>
+              <p>Membiarkan Liu melanjutkan ceritanya.</p>
+              <p>&quot;Waktu itu...&quot;</p>
+              <p>&quot;Liu pikir dia serius.&quot;</p>
+              <p>&quot;Ternyata enggak.&quot;</p>
+              <p>&quot;Dia masih belum selesai sama masa lalunya.&quot;</p>
+              <p>&quot;Masih sering bahas mantannya.&quot;</p>
+              <p>&quot;Masih sering balik ke mantannya.&quot;</p>
+              <p>&quot;Dan...&quot;</p>
+              <p>&quot;...hubungan Liu gak pernah diakui.&quot;</p>
+              <p>&quot;Kalau lagi berdua...&quot;</p>
+              <p>&quot;Dia manis.&quot;</p>
+              <p>&quot;Tapi begitu ada orang lain...&quot;</p>
+              <p>&quot;Liu seperti gak pernah ada.&quot;</p>
+              <p>Nicholass menghela napas pelan.</p>
+              <p>&quot;Pasti capek ya.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Capek.&quot;</p>
+              <p>&quot;Tapi Liu bertahan.&quot;</p>
+              <p>&quot;Karena Liu pikir...&quot;</p>
+              <p>&quot;...suatu hari nanti dia bakal berubah.&quot;</p>
+              <p>&quot;Ternyata...&quot;</p>
+              <p>&quot;...yang berubah cuma harapan Liu.&quot;</p>
+              <p>Suara Liu terdengar tenang.</p>
+              <p>Seolah luka itu benar-benar mulai sembuh.</p>
+              <p>&quot;Sampai akhirnya...&quot;</p>
+              <p>&quot;Liu mutusin hubungan itu.&quot;</p>
+              <p>&quot;Dan sejak hari itu...&quot;</p>
+              <p>&quot;Liu janji.&quot;</p>
+              <p>&quot;Kalau suatu saat Liu punya pasangan lagi...&quot;</p>
+              <p>&quot;...Liu gak mau lagi bertahan di hubungan yang cuma dijalanin sendirian.&quot;</p>
+              <p>Nicholass tersenyum kecil.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Makasih ya.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Karena udah percaya sama Nicho.&quot;</p>
+              <p>&quot;Liu juga makasih… Karena Nicho selalu bikin Liu ngerasa dipilih.&quot;</p>
+              <p>Mereka kembali tertawa kecil. Suasana yang sempat canggung perlahan menghilang. Obrolan mereka kembali seperti biasanya.</p>
+              <p>Membahas latihan.</p>
+              <p>Tugas kuliah.</p>
+              <p>Jonathan yang kembali dimarahi dosen.</p>
+              <p>Elrick yang hampir terlambat masuk kelas.</p>
+              <p>Sampai rencana tampil perdana Tim Music minggu depan.</p>
+              <p>Tanpa terasa...</p>
+              <p>Jam sudah menunjukkan hampir pukul satu dini hari.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Udah ngantuk. Hehe...&quot;</p>
+              <p>&quot;Nicho juga.&quot;</p>
+              <p>&quot;Yaudah...&quot;</p>
+              <p>&quot;Selamat tidur ya.&quot;</p>
+              <p>&quot;Jangan lupa mimpiin Liu. Liu mah selalu menantikan nicho dalam mimpi.&quot;</p>
+              <p>&quot;Waduh. Jago juga ya gombalnya.&quot;</p>
+              <p>&quot;Belajar dari pacar Liu.&quot;</p>
+              <p>Nicholass tertawa kecil.</p>
+              <p>&quot;Tenang aja, Nicho juga menantikan Liu dialam mimpi kok. Selamat tidur, My beautiful angel.&quot;</p>
+              <p>&quot;Selamat tidur, Nicho.&quot;</p>
+              <p>Panggilan itu pun berakhir.</p>
+              <p>Malam kembali sunyi.</p>
+              <p>Namun hati mereka terasa jauh lebih tenang dibanding beberapa hari sebelumnya.</p>
+              <p>Hari demi hari berlalu.</p>
+              <p>Hubungan mereka semakin dekat.</p>
+              <p>Semakin memahami kebiasaan satu sama lain.</p>
+              <p>Liu mulai hafal kalau Nicholass akan diam saat sedang memendam emosi.</p>
+              <p>Sementara Nicholass tahu...</p>
+              <p>Liu selalu tersenyum kecil setiap kali gugup.</p>
+              <p>Latihan Tim Music pun semakin padat.</p>
+              <p>Penampilan perdana mereka tinggal menghitung hari.</p>
+              <p>Di sisi lain...</p>
+              <p>Ada satu tanggal yang jauh lebih dinanti oleh Nicholass.</p>
+              <p>Hari jadi mereka.</p>
+              <p>Tepat satu bulan sejak malam ketika Nicholass memberanikan diri menyatakan perasaannya.</p>
+              <p>Sore itu, seusai latihan, Nicholass menghampiri Liu.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Malam ini... Nicho boleh nginep gak?&quot;</p>
+              <p>Liu berkedip bingung.</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Nicho mau latihan vokal sama dance lagi sama Liu. Boleh kan?&quot;</p>
+              <p>Liu mengangguk tanpa ragu.</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>&quot;Besok sekalian latihan dari pagi.&quot;</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>Malam itu...</p>
+              <p>Apartemen Liu kembali dipenuhi suara tawa mereka. Setelah selesai berlatih, keduanya duduk di ruang tengah sambil mengevaluasi koreografi.</p>
+              <p>Tak terasa...</p>
+              <p>Jam hampir menunjukkan pukul dua belas malam.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Lapar gak?&quot;</p>
+              <p>&quot;Dikit. Yaudah kalua gitu Nicho keluar bentar ya… Mau beli makanan.&quot;</p>
+              <p>Liu mengangguk.</p>
+              <p>&quot;Iya. Hati-hati.&quot;</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Pintu apartemen kembali terbuka.</p>
+              <p>&quot;Nicho pulang.&quot;</p>
+              <p>&quot;Lama juga.&quot;</p>
+              <p>&quot;Hehe.&quot;</p>
+              <p>&quot;Soalnya… Nicho nyari sesuatu.&quot;</p>
+              <p>Liu mengernyit penasaran.</p>
+              <p>&quot;Apa?&quot;</p>
+              <p>Nicholass tersenyum lebar.</p>
+              <p>Ia menyembunyikan sesuatu di balik punggungnya.</p>
+              <p>&quot;Tutup mata dulu.&quot;</p>
+              <p>&quot;Loh?&quot;</p>
+              <p>&quot;Cepet.&quot;</p>
+              <p>Liu menurut.</p>
+              <p>Perlahan ia memejamkan mata. Beberapa detik kemudian...</p>
+              <p>&quot;Nah.. Boleh buka mata sekarang.&quot;</p>
+              <p>Saat matanya terbuka...</p>
+              <p>Di hadapannya telah berdiri Nicholass.</p>
+              <p>Membawa sebuah kue kecil dengan satu lilin yang menyala. Api kecil itu menari pelan di tengah ruangan yang remang.</p>
+              <p>&quot;Tadaa!! Happy first monthsary, sayang.&quot;</p>
+              <p>Liu membeku. Matanya berkaca-kaca.</p>
+              <p>&quot;Nicho... Kok... Nicho...&quot;</p>
+              <p>“Ouuuu~ Sayang jangan nangis..&quot; Ucap Nicholass sambal mendekati Liu dan mengusap air matanya dengan satu tangannya.</p>
+              <p>&quot;Bukan…Cuma...terharu.&quot;</p>
+              <p>Nicholass terkekeh pelan.</p>
+              <p>&quot;Ayo Kita doa dulu.&quot;</p>
+              <p>&quot;Semoga hubungan kita...&quot;</p>
+              <p>&quot;...selalu saling memilih.&quot;</p>
+              <p>&quot;...selalu saling percaya.&quot;</p>
+              <p>&quot;...dan semoga suatu hari nanti...&quot;</p>
+              <p>&quot;...kita bisa lihat ke belakang sambil bilang...&quot;</p>
+              <p>&quot;Untung dulu kita gak nyerah.&quot;</p>
+              <p>Liu mengangguk pelan.</p>
+              <p>&quot;Amin.&quot;</p>
+              <p>Mereka saling tersenyum. Lalu bersama-sama meniup lilin itu. Ruangan kembali dipenuhi tepuk tangan kecil dari mereka berdua. Belum sempat Liu mengambil piring...</p>
+              <p>Pluk.</p>
+              <p>Sedikit krim kue menempel di ujung hidungnya. Liu langsung menoleh.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Hehe.&quot;</p>
+              <p>&quot;Bales kalau berani.&quot;</p>
+              <p>&quot;Oh...&quot;</p>
+              <p>&quot;Gitu ya?&quot;</p>
+              <p>Beberapa detik kemudian...</p>
+              <p>Kini giliran pipi Nicholass yang dipenuhi krim.</p>
+              <p>&quot;Tuh.&quot;</p>
+              <p>&quot;Imbang.&quot;</p>
+              <p>Tawa mereka pecah memenuhi apartemen.</p>
+              <p>Setelah puas bercanda...</p>
+              <p>Nicholass mengambil sebuah kotak kecil dari tasnya.</p>
+              <p>&quot;Nih.&quot;</p>
+              <p>&quot;Buat Liu.&quot;</p>
+              <p>Liu membukanya perlahan. Di dalamnya terdapat sebuah kalung dengan liontin berbentuk cincin.</p>
+              <p>&quot;Liu suka?&quot;</p>
+              <p>&quot;Bukan suka lagi.&quot;</p>
+              <p>&quot;Liu sayang.&quot;</p>
+              <p>&quot;Nah...&quot;</p>
+              <p>&quot;Masih ada satu lagi.&quot;</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>Nicholass mengeluarkan ponselnya.</p>
+              <p>&quot;Nicho juga bikin hadiah sendiri.&quot;</p>
+              <p>&quot;Apa?&quot;</p>
+              <p>&quot;Sebuah website.&quot;</p>
+              <p>&quot;Isinya...&quot;</p>
+              <p>&quot;Ucapan selamat.&quot;</p>
+              <p>&quot;Cerita kita.&quot;</p>
+              <p>&quot;Dan nanti...&quot;</p>
+              <p>&quot;...bakal terus Nicho isi biar jadi kenangan kita. Nicho public website ini dan bisa diakses semua orang, nicho juga taroh ini di semua akun sosial media nicho.&quot;</p>
+              <p>Liu tersenyum hangat.</p>
+              <p>Sementara itu...</p>
+              <p>Ia juga mengeluarkan sebuah kotak kecil dari dalam laci meja.</p>
+              <p>&quot;Gantian.&quot;</p>
+              <p>&quot;Nicho buka.&quot;</p>
+              <p>Saat dibuka...</p>
+              <p>Sebuah kalung dengan lionton berbentuk kelopak semanggi dan gembok kecil berada di dalamnya.</p>
+              <p>&quot;Jadi kita couple ni?&quot;</p>
+              <p>Liu mengangguk malu.</p>
+              <p>&quot;Hehe... Iya.&quot;</p>
+              <p>Nicholass langsung memeluk Liu erat.</p>
+              <p>&quot;Makasih...&quot;</p>
+              <p>&quot;Happy first monthsary, My Bella.&quot;</p>
+              <p>&quot;Happy first monthsary, Nicho.&quot;</p>
+              <p>Di luar jendela...</p>
+              <p>Jam digital tepat menunjukkan pukul 00.00.</p>
+              <p>Mengawali bulan pertama perjalanan mereka.</p>
+              <p>Tanpa mereka sadari...</p>
+              <p>Masih banyak kisah yang akan mereka lalui bersama.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-5">Bab 5</a><a class="primary-button" href="#chapter-7">Bab 7</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-7">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 07</p>
+            <h2>Bab 7</h2>
+              <p>Satu minggu berlalu sejak malam sederhana yang mereka rayakan bersama. Kue kecil. Dua buah kalung.</p>
+              <p>Dan doa yang mereka panjatkan tepat saat jarum jam menunjukkan pukul 00.00.</p>
+              <p>Kini...</p>
+              <p>Hari yang ditunggu akhirnya tiba.</p>
+              <p>Hari penampilan perdana Tim Music Kampus.</p>
+              <p>Sejak pagi, Gedung Kesenian kampus sudah dipenuhi mahasiswa. Di berbagai sudut ruangan terdengar suara latihan vokal, dentingan gitar, tabuhan drum, hingga tawa para anggota organisasi yang saling menyemangati.</p>
+              <p>Di ruang tunggu belakang panggung...</p>
+              <p>Semua anggota Tim Music tampak sibuk.</p>
+              <p>Ada yang sedang melakukan pemanasan vokal.</p>
+              <p>Ada yang merapikan kostum.</p>
+              <p>Ada pula yang masih menghafal koreografi.</p>
+              <p>Sementara itu...</p>
+              <p>&quot;Nicho!&quot;</p>
+              <p>Suara Jonathan terdengar dari sudut ruangan.</p>
+              <p>&quot;Lo ngapain muter-muter dari tadi?&quot;</p>
+              <p>Nicholass yang baru saja mengintip ke luar ruangan menoleh.</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>&quot;Nyari orang.&quot;</p>
+              <p>Jonathan langsung mendengus.</p>
+              <p>&quot;Buset.&quot;</p>
+              <p>&quot;Pacar lo ilang lima menit aja udah panik.&quot;</p>
+              <p>Elrick ikut terkekeh.</p>
+              <p>&quot;GPS khusus Liu kayaknya aktif terus.&quot;</p>
+              <p>Nicholass hanya menyengir tanpa merasa bersalah.</p>
+              <p>&quot;Ya emang.&quot;</p>
+              <p>Belum sempat Jonathan membalas...</p>
+              <p>Seseorang menepuk pelan bahu Nicholass dari belakang.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>Begitu menoleh...</p>
+              <p>Sudut bibirnya langsung terangkat.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>Liu berdiri sambil membawa dua botol air mineral dingin.</p>
+              <p>&quot;Nih.&quot;</p>
+              <p>&quot;Minum dulu.&quot;</p>
+              <p>Nicholass menerimanya sambil tersenyum lebar.</p>
+              <p>&quot;Makasih, sayang.&quot;</p>
+              <p>Kalimat itu membuat beberapa anggota Tim Music yang berada di sekitar mereka langsung menoleh bersamaan.</p>
+              <p>&quot;WOOOOOOO!&quot;</p>
+              <p>&quot;Buset!&quot;</p>
+              <p>&quot;Cieeee!&quot;</p>
+              <p>Liu refleks menundukkan kepala karena malu.</p>
+              <p>Pipinya memerah.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Apa sih...&quot;</p>
+              <p>Nicholass malah tertawa kecil.</p>
+              <p>&quot;Kan emang pacar Nicho.&quot;</p>
+              <p>&quot;Harus bangga.&quot;</p>
+              <p>Jonathan memegang dahinya.</p>
+              <p>&quot;Gua nyesel ngajak lo ikut organisasi.&quot;</p>
+              <p>Elrick mengangguk setuju.</p>
+              <p>&quot;Parah.&quot;</p>
+              <p>&quot;Belum tampil aja udah bikin diabetes.&quot;</p>
+              <p>Semua orang kembali tertawa.</p>
+              <p>Tak lama kemudian...</p>
+              <p>Gea memasuki ruangan sambil membawa clipboard di tangannya.</p>
+              <p>&quot;Oke, semuanya.&quot;</p>
+              <p>&quot;Lima belas menit lagi kita naik panggung.&quot;</p>
+              <p>&quot;Tolong cek lagi kostum, mic, sama in-ear masing-masing.&quot;</p>
+              <p>&quot;Jangan ada yang panik.&quot;</p>
+              <p>&quot;Kalau ada masalah, langsung lapor.&quot;</p>
+              <p>&quot;Siap, Kak!&quot; Jawaban kompak terdengar memenuhi ruangan.</p>
+              <p>Liu yang berdiri di samping Nicholass memperhatikan kerah kemeja kekasihnya.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kerahnya miring.&quot;</p>
+              <p>&quot;Oh ya?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Tanpa banyak bicara...</p>
+              <p>Liu melangkah lebih dekat. Perlahan ia merapikan kerah baju Nicholass. Lalu membetulkan kabel microphone yang sedikit melilit di belakang lehernya.</p>
+              <p>&quot;Nah. Udah.&quot;</p>
+              <p>Belum sempat Liu mundur...</p>
+              <p>Terdengar suara siulan dari berbagai arah.</p>
+              <p>&quot;WUUUUUU!&quot;</p>
+              <p>&quot;ASEKKK!&quot;</p>
+              <p>&quot;PACARAN NIH!&quot;</p>
+              <p>Liu langsung menutup wajahnya.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Malu...&quot;</p>
+              <p>Nicholass justru tersenyum jahil.</p>
+              <p>&quot;Loh.&quot;</p>
+              <p>&quot;Pacar Nicho perhatian.&quot;</p>
+              <p>&quot;Kenapa harus malu?&quot;</p>
+              <p>Liu mencubit pelan pinggang Nicholass.</p>
+              <p>&quot;Ah!&quot;</p>
+              <p>&quot;Sakit.&quot;</p>
+              <p>&quot;Rasain.&quot;</p>
+              <p>Seluruh ruangan kembali dipenuhi gelak tawa.</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Lampu aula mulai diredupkan.</p>
+              <p>Suara MC menggema memenuhi ruangan.</p>
+              <p>&quot;Selamat datang di event kesenian minat dan bakat anak emas Universitas...&quot;</p>
+              <p>Tepuk tangan memenuhi aula. Satu per satu penampilan berlalu.</p>
+              <p>Hingga akhirnya...</p>
+              <p>&quot;Berikutnya...&quot;</p>
+              <p>&quot;Mari kita sambut...&quot;</p>
+              <p>&quot;Tim Music Universitas Generasi 23, NEXUS! &quot;</p>
+              <p>Lampu sorot langsung mengarah ke atas panggung. Suara musik mulai mengalun. Satu per satu anggota berjalan ke posisi masing-masing. Jantung Nicholass berdegup sedikit lebih cepat. Ia melirik ke arah Liu. Liu hanya tersenyum kecil. Ia mengangguk pelan.</p>
+              <p>Seolah berkata...</p>
+              <p>&quot;Tenang. Kita bisa.&quot;</p>
+              <p>Entah kenapa...</p>
+              <p>Hanya dengan satu senyuman itu...</p>
+              <p>Rasa gugup Nicholass perlahan menghilang.</p>
+              <p>Musik dimulai.</p>
+              <p>Penampilan mereka berlangsung jauh lebih baik dari yang mereka bayangkan.</p>
+              <p>Suara tepuk tangan bergema hampir di setiap akhir lagu.</p>
+              <p>Sorakan penonton memenuhi aula.</p>
+              <p>Bahkan beberapa mahasiswa mulai ikut bernyanyi bersama.</p>
+              <p>Empat puluh menit terasa begitu cepat.</p>
+              <p>Saat lagu terakhir berakhir...</p>
+              <p>Seluruh aula berdiri memberikan tepuk tangan.</p>
+              <p>&quot;Terima kasih!&quot;</p>
+              <p>teriak Gea. Sorakan kembali memenuhi ruangan. Mereka berhasil.</p>
+              <p>Begitu turun dari panggung... Semua anggota saling berpelukan.</p>
+              <p>&quot;Keren!&quot;</p>
+              <p>&quot;Kita berhasil!&quot;</p>
+              <p>&quot;Gilaaa!&quot;</p>
+              <p>Gea tersenyum lega.</p>
+              <p>&quot;Good job semuanya.&quot;</p>
+              <p>&quot;Kalian luar biasa.&quot;</p>
+              <p>Di tengah keramaian itu...</p>
+              <p>Nicholass langsung menghampiri Liu.</p>
+              <p>Tanpa berpikir panjang...</p>
+              <p>Ia memeluk Liu erat.</p>
+              <p>&quot;Good job.&quot;</p>
+              <p>Liu tersenyum hangat.</p>
+              <p>&quot;Kamu juga.&quot;</p>
+              <p>Belum sampai tiga detik...</p>
+              <p>Jonathan langsung berteriak.</p>
+              <p>&quot;WOIIII!&quot;</p>
+              <p>&quot;INI KAMPUS!&quot;</p>
+              <p>Elrick ikut menambahkan.</p>
+              <p>&quot;Minimal liat kanan kiri dulu.&quot;</p>
+              <p>Semua anggota kembali tertawa.</p>
+              <p>Nicholass hanya terkekeh.</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Peluk pacar sendiri salah?&quot;</p>
+              <p>&quot;Salahnya...&quot;</p>
+              <p>Jonathan menunjuk ke arah seluruh anggota.</p>
+              <p>&quot;Kita semua jadi obat nyamuk.&quot;</p>
+              <p>Malam harinya...</p>
+              <p>Seluruh anggota Tim Music memutuskan makan bersama di sebuah warung langganan dekat kampus.</p>
+              <p>Meja panjang hampir penuh. Suasananya begitu ramai. Tawa terdengar bersahutan.</p>
+              <p>Jonathan sedang sibuk menggoda anggota lain. Elrick tertawa sampai hampir tersedak es teh. Gea sesekali mengingatkan agar tidak terlalu berisik.</p>
+              <p>Sementara Liu...</p>
+              <p>Duduk tepat di samping Nicholass.</p>
+              <p>Saat makanan datang...</p>
+              <p>Liu mengambilkan piring lebih dulu untuk Nicholass.</p>
+              <p>&quot;Nih.&quot;</p>
+              <p>&quot;Makan dulu.&quot;</p>
+              <p>&quot;Makasih.&quot;</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Nicholass memperhatikan wajah Liu.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Jangan gerak.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Ada nasi.&quot;</p>
+              <p>Liu refleks berhenti bergerak.</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>Di depan semua orang...</p>
+              <p>Nicholass mengangkat tangan kanannya.</p>
+              <p>Perlahan...</p>
+              <p>Ia membersihkan sebutir nasi yang menempel di sudut bibir Liu menggunakan ibu jarinya.</p>
+              <p>&quot;Nah.&quot;</p>
+              <p>&quot;Udah.&quot;</p>
+              <p>Seketika...</p>
+              <p>Satu meja hening.</p>
+              <p>Semua orang memandangi mereka.</p>
+              <p>Jonathan menghela napas panjang.</p>
+              <p>&quot;Anjing.&quot;</p>
+              <p>&quot;Bucin.&quot;</p>
+              <p>Elrick sampai menutup wajahnya sendiri.</p>
+              <p>&quot;Ini warung.&quot;</p>
+              <p>&quot;Bukan lokasi syuting drama.&quot;</p>
+              <p>Liu yang baru sadar langsung menunduk malu.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Kenapa sih...&quot;</p>
+              <p>Nicholass justru tertawa kecil.</p>
+              <p>&quot;Loh.&quot;</p>
+              <p>&quot;Kan kalau gak dibersihin nanti ganggu.&quot;</p>
+              <p>&quot;Dasar.&quot;</p>
+              <p>Setelah makan...</p>
+              <p>Mereka berjalan santai mengelilingi area kampus.</p>
+              <p>Udara malam terasa cukup sejuk.</p>
+              <p>Tanpa sadar...</p>
+              <p>Liu mulai terlihat sedikit mengantuk.</p>
+              <p>Ia berjalan semakin pelan.</p>
+              <p>Sesekali mengucek matanya.</p>
+              <p>Melihat itu...</p>
+              <p>Nicholass menghentikan langkahnya.</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>Belum sempat Liu bertanya...</p>
+              <p>Tangannya sudah lebih dulu digenggam erat oleh Nicholass.</p>
+              <p>&quot;Capek?&quot;</p>
+              <p>&quot;Dikit.&quot;</p>
+              <p>&quot;Pegangan aja.&quot;</p>
+              <p>&quot;Biar gak ilang.&quot;</p>
+              <p>Liu tersenyum kecil.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Dari belakang...</p>
+              <p>Jonathan langsung berteriak.</p>
+              <p>&quot;ELRICK!&quot;</p>
+              <p>&quot;LIAT TUH!&quot;</p>
+              <p>Elrick menoleh. Lalu pura-pura memegang dada.</p>
+              <p>&quot;Aduh.&quot;</p>
+              <p>&quot;Jantung gua.&quot;</p>
+              <p>&quot;Sakit.&quot;</p>
+              <p>Semua orang kembali tertawa.</p>
+              <p>Namun...</p>
+              <p>Tak ada satu pun yang benar-benar merasa terganggu.</p>
+              <p>Justru melihat keduanya bersama membuat suasana terasa semakin hangat.</p>
+              <p>Bagi teman-teman mereka...</p>
+              <p>Hubungan Nicholass dan Liu bukan sesuatu yang dibuat-buat.</p>
+              <p>Mereka memang saling menjaga. Saling memilih.</p>
+              <p>Dan saling memperlakukan satu sama lain dengan sangat baik.</p>
+              <p>Malam itu...</p>
+              <p>Untuk pertama kalinya...</p>
+              <p>Semesta benar-benar tahu. Bahwa Nicholass dan Liu...</p>
+              <p>Sedang sangat berbahagia.</p>
+              <p>Beberapa hari setelah penampilan perdana Tim Music...</p>
+              <p>Kehidupan mereka kembali dipenuhi rutinitas yang sama.</p>
+              <p>Pagi hari kuliah.</p>
+              <p>Sore hingga malam latihan.</p>
+              <p>Sesekali mengerjakan tugas bersama.</p>
+              <p>Lalu menutup hari dengan evaluasi melalui panggilan telepon sebelum tidur.</p>
+              <p>Hubungan Nicholass dan Liu pun semakin dikenal oleh teman-teman di Tim Music.</p>
+              <p>Bahkan kini, hampir semua anggota sudah terbiasa melihat keduanya selalu bersama.</p>
+              <p>Sore itu...</p>
+              <p>Latihan dance baru saja selesai.</p>
+              <p>Musik dimatikan.</p>
+              <p>Beberapa anggota langsung merebahkan diri di lantai karena kelelahan.</p>
+              <p>Jonathan mengusap wajahnya dengan handuk.</p>
+              <p>&quot;Anjir...&quot;</p>
+              <p>&quot;Kalau begini terus, gua bisa kurus.&quot;</p>
+              <p>Elrick terkekeh.</p>
+              <p>&quot;Syukur.&quot;</p>
+              <p>&quot;Daripada perut lu makin maju.&quot;</p>
+              <p>&quot;Mulut lu emang.&quot;</p>
+              <p>Tak jauh dari mereka...</p>
+              <p>Liu sedang mengobrol santai bersama sahabatnya.</p>
+              <p>&quot;Zevan.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Jadi makan nanti?&quot;</p>
+              <p>Zevan mengangguk pelan.</p>
+              <p>&quot;Jadi.&quot;</p>
+              <p>&quot;Tapi nunggu anak-anak selesai beresin alat dulu.&quot;</p>
+              <p>Liu mengangguk sambil meminum air mineralnya.</p>
+              <p>Suasana sore itu terasa begitu santai.</p>
+              <p>Hingga...</p>
+              <p>Pintu ruang latihan perlahan terbuka.</p>
+              <p>Semua orang spontan menoleh.</p>
+              <p>Seorang laki-laki masuk dengan senyum lebar di wajahnya.</p>
+              <p>Ia melambaikan kedua tangannya dengan semangat.</p>
+              <p>&quot;Haiii!&quot;</p>
+              <p>&quot;Avie datang!&quot;</p>
+              <p>&quot;Kakak-kakak...&quot;</p>
+              <p>&quot;Kalian gak rindu Avie?&quot;</p>
+              <p>Suasana ruangan hening sesaat sebelum seketika berubah ramai.</p>
+              <p>Beberapa orang langsung berdiri menghampirinya.</p>
+              <p>&quot;Vie!&quot;</p>
+              <p>&quot;Koka vie disini? Javier kenapa?&quot;</p>
+              <p>&quot;Kangen dong!&quot;</p>
+              <p>Zevan ikut tertawa.</p>
+              <p>&quot;Javier...&quot;</p>
+              <p>&quot;Eh.&quot;</p>
+              <p>&quot;Avie.&quot;</p>
+              <p>&quot;Kabar kamu gimana?&quot;</p>
+              <p>Avie tersenyum begitu ceria.</p>
+              <p>&quot;Baik!&quot;</p>
+              <p>&quot;Avie kangen sama kakak-kakak.&quot;</p>
+              <p>Di sisi lain...</p>
+              <p>Nicholass hanya berdiri mematung.Keningnya berkerut. Tatapannya berpindah dari wajah Avie ke arah Zevan. Lalu ke Jonathan. Lalu kembali lagi ke Avie.</p>
+              <p>Tanpa berpikir panjang...</p>
+              <p>Ia berjalan menghampiri lelaki itu. Senyumnya masih santai seperti biasa.</p>
+              <p>&quot;Apa dah lu, Jav.&quot;</p>
+              <p>Nicholass menyenggol pelan bahu lelaki itu.</p>
+              <p>&quot;Efek kangen doi ya? Lu jadi begini.&quot;</p>
+              <p>Avie langsung mengembungkan pipinya.</p>
+              <p>&quot;Apasih, Kak!&quot;</p>
+              <p>&quot;Javier ya Javier.&quot;</p>
+              <p>&quot;Ini Avie.&quot;</p>
+              <p>&quot;Avie ya Avie.&quot;</p>
+              <p>&quot;Beda.&quot;</p>
+              <p>Nicholass terkekeh kecil.</p>
+              <p>&quot;Halah.&quot;</p>
+              <p>&quot;Sama aja.&quot;</p>
+              <p>&quot;Beda, Kak!&quot;</p>
+              <p>Jawaban itu membuat Nicholass semakin bingung.</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>&quot;Lu Javier kan? Apa kerasukan apaan?&quot;</p>
+              <p>Avie menggeleng cepat.</p>
+              <p>&quot;Enggak.&quot;</p>
+              <p>&quot;Avie.&quot;</p>
+              <p>Beberapa anggota lain justru ikut menimpali.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Ini Avie.&quot;</p>
+              <p>&quot;Lucu banget kan?&quot;</p>
+              <p>Nicholass hanya tersenyum canggung. Ia sama sekali tidak mengerti apa yang sedang terjadi.</p>
+              <p>Di sudut ruangan...</p>
+              <p>Jonathan dan Elrick saling berpandangan. Ekspresi keduanya langsung berubah serius. Elrick menelan ludah pelan. Ia menyadari sesuatu. Tanpa membuang waktu...</p>
+              <p>Ia segera menghampiri Nicholass.</p>
+              <p>&quot;Hehe...&quot;</p>
+              <p>&quot;Nich.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kayaknya...&quot;</p>
+              <p>&quot;Lu latihan vokal lagi aja deh sama Liu.&quot;</p>
+              <p>Nicholass menoleh.</p>
+              <p>&quot;Latihan?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Besok evaluasi.&quot;</p>
+              <p>&quot;Mending sekarang.&quot;</p>
+              <p>Jonathan yang memahami maksud Elrick langsung mengangguk.</p>
+              <p>&quot;O-oh.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Bener.&quot;</p>
+              <p>&quot;Sana aja dulu.&quot;</p>
+              <p>&quot;Bagian kita udah aman.&quot;</p>
+              <p>&quot;Lu sama Liu diskusi lagi.&quot;</p>
+              <p>&quot;Kalau Kak Gea tau...&quot;</p>
+              <p>&quot;Bisa disuruh ngulang semua nanti.&quot;</p>
+              <p>Nicholass mengernyit.</p>
+              <p>&quot;Loh?&quot;</p>
+              <p>&quot;Emang kenapa buru-buru amat?&quot;</p>
+              <p>Jonathan tersenyum kaku.</p>
+              <p>&quot;Gak kenapa-kenapa.&quot;</p>
+              <p>&quot;Latihan aja.&quot;</p>
+              <p>Liu yang sejak tadi memperhatikan akhirnya ikut berdiri.</p>
+              <p>Tatapannya bergantian melihat Jonathan dan Elrick.</p>
+              <p>Entah kenapa...</p>
+              <p>Ia merasa kedua sahabat Nicholass itu sedang berusaha menyembunyikan sesuatu.</p>
+              <p>Namun...</p>
+              <p>Liu memilih tidak bertanya.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kalau gitu...&quot;</p>
+              <p>&quot;Kita ke apartemen Liu aja, Sekalian latihan.&quot;</p>
+              <p>Nicholass mengangguk.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Sebelum benar-benar pergi...</p>
+              <p>Ia sempat menoleh sekali lagi ke arah Avie.</p>
+              <p>Lelaki itu masih tertawa riang bersama Zevan dan beberapa anggota lainnya.</p>
+              <p>Perasaan aneh kembali muncul di dalam diri Nicholass.</p>
+              <p>Entah kenapa...</p>
+              <p>Dadanya terasa sedikit sesak.</p>
+              <p>Namun ia memilih mengabaikannya.</p>
+              <p>Malam mulai turun.</p>
+              <p>Lampu-lampu apartemen Liu menyala hangat.</p>
+              <p>Begitu sampai...</p>
+              <p>Keduanya langsung berganti pakaian yang lebih santai.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Makan dulu?&quot;</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>Mereka memesan makanan sederhana.</p>
+              <p>Lalu duduk berdampingan sambil menikmati makan malam.</p>
+              <p>Seperti biasanya...</p>
+              <p>Tak banyak percakapan.</p>
+              <p>Namun suasana itu justru terasa nyaman.</p>
+              <p>Setelah selesai makan...</p>
+              <p>Liu membuka laptopnya.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Tugas yang kemarin udah?&quot;</p>
+              <p>&quot;Belum.&quot;</p>
+              <p>&quot;Kerjain bareng yuk.&quot;</p>
+              <p>&quot;Hayuk.&quot;</p>
+              <p>Mereka menghabiskan hampir dua jam mengerjakan tugas.</p>
+              <p>Sesekali saling bertanya.</p>
+              <p>Sesekali saling bercanda.</p>
+              <p>Ketika tugas selesai...</p>
+              <p>Liu mengambil buku catatannya.</p>
+              <p>Sementara Nicholass mengambil sketch book dan pensil sketsa.</p>
+              <p>&quot;Mau gambar?&quot;</p>
+              <p>tanya Liu.</p>
+              <p>&quot;Iya, Biar rileks.&quot;</p>
+              <p>Liu tersenyum kecil.</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>Keheningan kembali memenuhi ruangan. Suara goresan pensil. Namun...</p>
+              <p>Semakin lama...</p>
+              <p>Pikiran Nicholass justru semakin sibuk. Bayangan kejadian sore tadi terus berputar di kepalanya.</p>
+              <p>&quot;Avie...&quot;</p>
+              <p>&quot;Javier...&quot;</p>
+              <p>&quot;Avie...&quot;</p>
+              <p>Tangannya perlahan mulai bergetar. Pensil yang ia pegang tak lagi bergerak lurus.</p>
+              <p>&quot;Nicho?&quot;</p>
+              <p>Suara Liu membuatnya tersadar.</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kok berhenti?&quot;</p>
+              <p>Nicholass menarik napas panjang.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Nicho boleh nanya?&quot;</p>
+              <p>Liu menutup buku catatannya. Ia memutar tubuhnya menghadap Nicholass.</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>&quot;Apa aja.&quot;</p>
+              <p>Nicholass menunduk beberapa detik. Tangannya masih sedikit gemetar.</p>
+              <p>&quot;Mm...&quot;</p>
+              <p>&quot;Hari ini...&quot;</p>
+              <p>&quot;Nicho bingung banget.&quot;</p>
+              <p>&quot;Soal Javier.&quot;</p>
+              <p>Liu terdiam.</p>
+              <p>&quot;Nicho gak ngerti.&quot;</p>
+              <p>&quot;Kenapa tadi...&quot;</p>
+              <p>&quot;Dia bilang dia Avie.&quot;</p>
+              <p>&quot;Terus...&quot;</p>
+              <p>&quot;Semua orang kayak udah biasa.&quot;</p>
+              <p>&quot;Padahal...&quot;</p>
+              <p>&quot;Menurut Nicho...&quot;</p>
+              <p>&quot;Itu Javier.&quot;</p>
+              <p>Liu menatap mata Nicholass cukup lama. Lalu tersenyum tipis.</p>
+              <p>&quot;Oh...&quot;</p>
+              <p>&quot;Soal itu ya.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Liu menghela napas pelan.</p>
+              <p>&quot;Javier...&quot;</p>
+              <p>&quot;Memang punya sisi lain dalam dirinya.&quot;</p>
+              <p>Nicholass mengernyit.</p>
+              <p>&quot;Maksudnya?&quot;</p>
+              <p>&quot;Itu dia.&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Bukan sepenuhnya dia.&quot;</p>
+              <p>Kalimat itu membuat jantung Nicholass berdetak semakin cepat. Tangannya kembali bergetar. Pikirannya mulai dipenuhi berbagai kemungkinan.</p>
+              <p>&quot;Maksudnya...&quot;</p>
+              <p>&quot;Bukan dia...&quot;</p>
+              <p>&quot;Tapi dia?&quot;</p>
+              <p>Liu masih menatapnya dengan tenang.</p>
+              <p>Seolah sedang mencari cara terbaik untuk menjelaskan semuanya.</p>
+              <p>Di sisi lain...</p>
+              <p>Nicholass mulai merasa kepalanya kembali dipenuhi suara-suara yang selama ini selalu berhasil ia pendam. Ia menggenggam pensil itu semakin erat.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Jadi gak ngerti.&quot;</p>
+              <p>Liu menggeser duduknya lebih dekat. Perlahan ia menggenggam tangan Nicholass yang mulai dingin.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Lihat Liu.&quot;</p>
+              <p>&quot;Apa pun yang Liu jelasin nanti...&quot;</p>
+              <p>&quot;Tenang dulu ya.&quot;</p>
+              <p>&quot;Nanti Liu ceritain pelan-pelan.&quot;</p>
+              <p>Nicholass mengangguk pelan. Meski jauh di dalam hatinya...</p>
+              <p>Ia mulai merasa takut dengan jawaban yang akan ia dengar.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-6">Bab 6</a><a class="primary-button" href="#chapter-8">Bab 8</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-8">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 08</p>
+            <h2>Bab 8</h2>
+              <p>Nicholass mengangguk pelan. Meski jauh di dalam hatinya...</p>
+              <p>Ia mulai merasa takut dengan jawaban yang akan ia dengar. Ruangan kembali dipenuhi keheningan. Hanya suara pendingin ruangan yang terdengar pelan di sudut apartemen, berpadu dengan alunan musik yang masih mengalun lembut dari speaker kecil di atas meja belajar. Liu masih menggenggam tangan Nicholass. Ia bisa merasakan jemari lelaki itu mulai terasa dingin.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Iya?&quot;</p>
+              <p>&quot;Kok tangan Nicho dingin?&quot;</p>
+              <p>Nicholass tersenyum tipis.</p>
+              <p>&quot;Gak tau.&quot;</p>
+              <p>&quot;Mungkin...&quot;</p>
+              <p>&quot;Nicho lagi bingung.&quot;</p>
+              <p>Liu mengusap pelan punggung tangannya.</p>
+              <p>&quot;Pelan-pelan aja.&quot;</p>
+              <p>&quot;Liu dengerin.&quot;</p>
+              <p>Nicholass menarik napas panjang.</p>
+              <p>Tatapannya kembali teringat pada sosok Avie yang ia lihat sore tadi.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Yang tadi...&quot;</p>
+              <p>&quot;Soal Javier.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Liu bilang...&quot;</p>
+              <p>&quot;Javier punya sisi lain dalam dirinya.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Itu Avie.&quot;</p>
+              <p>&quot;Mereka satu tubuh.&quot;</p>
+              <p>&quot;Cuma...&quot;</p>
+              <p>&quot;Kadang yang muncul Javier.&quot;</p>
+              <p>&quot;Kadang Avie.</p>
+              <p>Liu mengangguk pelan.</p>
+              <p>&quot;Nanti Liu jelasin lebih pelan kalau Nicho mau.&quot;</p>
+              <p>Namun sebelum Liu sempat melanjutkan, Nicholass kembali menunduk. Tangannya semakin gemetar.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kalau Nicho bilang...&quot;</p>
+              <p>&quot;Setiap Nicho tau ada orang yang... switch.&quot;</p>
+              <p>&quot;...otak Nicho langsung perang.&quot;</p>
+              <p>Liu mengernyit. &quot;Perang?&quot;</p>
+              <p>Nicholass mengangguk pelan. &quot;Iya.&quot;</p>
+              <p>&quot;Di luar semuanya diem.&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Di kepala Nicho rame.&quot;</p>
+              <p>&quot;Berisik.&quot;</p>
+              <p>&quot;Kayak semuanya bangun.&quot;</p>
+              <p>&quot;Liu gak ngerti...&quot;</p>
+              <p>&quot;Maksud Nicho?&quot;</p>
+              <p>Nicholass tersenyum hambar. &quot;Makanya...&quot;</p>
+              <p>&quot;Nicho selama ini gak pernah sadar.&quot;</p>
+              <p>&quot;Nicho kira...&quot;</p>
+              <p>&quot;Cuma Nicho yang kayak gini.&quot;</p>
+              <p>Kalimat itu membuat Liu membeku.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Maksudnya?&quot;</p>
+              <p>Nicholass mengangkat kepalanya.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;...juga hidup kayak Javier.&quot;</p>
+              <p>Liu terdiam. Seolah belum benar-benar mencerna kalimat yang baru saja ia dengar.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;...punya banyak orang di tubuh ini.&quot;</p>
+              <p>Ruangan kembali sunyi. Liu gak memotong sedikit pun. Ia memilih mendengarkan.</p>
+              <p>&quot;Sejak Nicho masih SD...&quot;</p>
+              <p>&quot;...mereka udah ada.&quot;</p>
+              <p>&quot;Nicho tumbuh bareng mereka.&quot;</p>
+              <p>&quot;Kadang...&quot;</p>
+              <p>&quot;Nicho bahkan bingung.&quot;</p>
+              <p>&quot;Yang tadi ngomong...&quot;</p>
+              <p>&quot;Itu Nicho...&quot;</p>
+              <p>&quot;Atau bukan.&quot; Napasnya mulai terdengar berat.</p>
+              <p>&quot;Nicho gak pernah bisa ngenalin...&quot;</p>
+              <p>&quot;...siapa Nicho yang sebenarnya.&quot;</p>
+              <p>&quot;Kadang cara mikir berubah.&quot;</p>
+              <p>&quot;Kadang cara ngomong berubah.&quot;</p>
+              <p>&quot;Kadang keputusan berubah.&quot;</p>
+              <p>&quot;Kadang...&quot;</p>
+              <p>&quot;Nicho ngerasa asing sama badan Nicho sendiri.&quot; Ia tertawa kecil. Tawa yang terdengar begitu pahit.</p>
+              <p>&quot;Lucu ya?&quot;</p>
+              <p>&quot;Hidup betahun tahun...&quot;</p>
+              <p>&quot;Tapi gak tau siapa diri sendiri.&quot;</p>
+              <p>Liu masih mematung. Tangannya perlahan naik menangkup kedua pipi Nicholass.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Ada berapa yang Nicho kenal?&quot;</p>
+              <p>Nicho menggeleng pelan.</p>
+              <p>&quot;Gak banyak.&quot;</p>
+              <p>&quot;Yang Nicho sadar...&quot;</p>
+              <p>&quot;Baru empat.&quot;</p>
+              <p>&quot;Gak tau seberapa banyak yang Nicho sendiri gak ngerti.&quot;</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Kalau suatu hari nanti...&quot;</p>
+              <p>&quot;...Liu ketemu salah satu dari mereka.&quot;</p>
+              <p>&quot;Dan mereka beda sama Nicho.&quot;</p>
+              <p>&quot;Bahkan mungkin...&quot;</p>
+              <p>&quot;Ada yang benci sama Liu.&quot;</p>
+              <p>&quot;Atau nyakitin Liu.&quot;</p>
+              <p>&quot;Pakai tubuh Nicho.&quot;</p>
+              <p>&quot;Tolong...&quot;</p>
+              <p>&quot;Jangan dipertahanin.&quot;</p>
+              <p>&quot;Jauhin aja.&quot;</p>
+              <p>&quot;Nicho gak mau Liu terluka gara-gara badan Nicho.&quot;</p>
+              <p>Kalimat itu membuat mata Liu mulai berkaca-kaca. Namun Nicholass belum menyadarinya.</p>
+              <p>&quot;Nicho juga...&quot;</p>
+              <p>&quot;...punya bipolar.&quot;</p>
+              <p>&quot;Belum parah.&quot;</p>
+              <p>&quot;Tapi dokter pernah nyaranin obat.&quot;</p>
+              <p>&quot;Nicho gak bisa minum karena efek sampingnya gak bisa nicho terima.&quot;</p>
+              <p>&quot;Jadi...&quot;</p>
+              <p>&quot;Nicho belajar bertahan sendiri.&quot;</p>
+              <p>&quot;Nicho juga gak pernah sadar...&quot;</p>
+              <p>&quot;...ternyata ada orang lain yang ngalamin hal yang sama.&quot;</p>
+              <p>&quot;Hari ini...&quot;</p>
+              <p>&quot;Waktu Liu cerita tentang Javier...&quot;</p>
+              <p>&quot;Nicho baru sadar.&quot;</p>
+              <p>&quot;Nicho ternyata gak sendirian.&quot;</p>
+              <p>Air mata Liu akhirnya jatuh. Setetes. Lalu semakin deras. Melihat itu, Nicholass langsung panik.</p>
+              <p>&quot;Eh...&quot;</p>
+              <p>&quot;Sayang.&quot;</p>
+              <p>&quot;Jangan nangis.&quot;</p>
+              <p>&quot;Nicho gak apa-apa.&quot;</p>
+              <p>&quot;Nicho cuma...&quot;</p>
+              <p>&quot;...pengen Liu tau.&quot;</p>
+              <p>&quot;Biar nanti...&quot;</p>
+              <p>&quot;Kalau Liu kecewa.&quot;</p>
+              <p>&quot;Liu masih bisa pergi.&quot;</p>
+              <p>&quot;Nicho gak akan nyalahin Liu.&quot;</p>
+              <p>Liu menggeleng cepat. Air matanya terus mengalir Ia langsung memeluk tubuh Nicholass erat.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Liu gak nangis karena takut.&quot;</p>
+              <p>&quot;Liu nangis karena Nicho selama ini nanggung semua itu sendirian.&quot;</p>
+              <p>&quot;Kenapa baru cerita sekarang...&quot;</p>
+              <p>Pelukan Liu semakin erat. Sementara Nicholass hanya terdiam. Untuk pertama kalinya...</p>
+              <p>Ia merasa ada seseorang yang tetap memilih memeluknya, bahkan setelah mengetahui rahasia paling gelap yang selama ini ia sembunyikan.</p>
+              <p>Pelukan Liu masih terasa hangat. Tangannya gak berhenti mengusap pelan punggung Nicholass, membiarkan lelaki itu menenangkan dirinya lebih dulu.</p>
+              <p>Ruangan kembali sunyi. Namun kali ini...</p>
+              <p>Keheningan itu terasa jauh lebih nyaman. Beberapa saat kemudian, Nicholass tersenyum kecil. Ia mengusap pelan air mata yang masih membasahi pipi Liu.</p>
+              <p>&quot;Sayang...&quot;</p>
+              <p>&quot;Jangan nangis lagi.&quot;</p>
+              <p>&quot;Liu jelek kalau nangis.&quot;</p>
+              <p>Liu langsung menggeleng pelan. &quot;Gak.&quot;</p>
+              <p>&quot;Liu gak nangis karena Nicho.&quot;</p>
+              <p>&quot;Liu nangis...&quot;</p>
+              <p>&quot;...karena selama ini Nicho nanggung semuanya sendirian.&quot; Nicholass tersenyum tipis.</p>
+              <p>&quot;Nicho udah biasa.&quot;</p>
+              <p>&quot;Itu yang bikin Liu kesel.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kenapa baru cerita sekarang?&quot;</p>
+              <p>Pertanyaan itu membuat Nicholass terdiam cukup lama. Ia menatap sketch book yang masih tergeletak di atas meja.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;...sebenernya bukan gak pernah cerita.&quot;</p>
+              <p>Liu menatapnya. &quot;Hm?&quot;</p>
+              <p>&quot;Nicho pernah.&quot;</p>
+              <p>&quot;Cuma...&quot;</p>
+              <p>&quot;Gak ada yang percaya.&quot;</p>
+              <p>Kalimat itu membuat Liu terdiam. &quot;Mereka cuma ngira...&quot;</p>
+              <p>&quot;Ah, itu cuma sifat Nicho yang berubah-ubah.&quot;</p>
+              <p>&quot;Nicho emang labil.&quot;</p>
+              <p>&quot;Besok juga balik lagi.&quot;</p>
+              <p>&quot;Ada juga yang bilang...&quot;</p>
+              <p>&quot;Lu mah emang dari dulu kayak gitu.&quot;</p>
+              <p>&quot;Mereka ngira...&quot;</p>
+              <p>&quot;Itu cuma sifat buruk Nicho.&quot;</p>
+              <p>&quot;Bukan sesuatu yang emang lagi Nicho hadapin.&quot;</p>
+              <p>&quot;Nicho capek harus jelasin.&quot;</p>
+              <p>&quot;Karena makin Nicho jelasin...&quot;</p>
+              <p>&quot;Mereka malah makin mikir Nicho lagi cari alasan.&quot;</p>
+              <p>&quot;Jadi mending diem. Lagian juga ngapain diumbar, itu penyakit, malu maluin”</p>
+              <p>Liu menunduk. Dadanya terasa sesak mendengar setiap kalimat yang keluar dari mulut Nicholass. Ia baru sadar...</p>
+              <p>Orang yang selama ini selalu terlihat ramah kepada siapa pun ternyata menyimpan kesepian yang begitu dalam.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Capek ya?&quot;</p>
+              <p>Nicholass tersenyum kecil.</p>
+              <p>&quot;Capek.&quot;</p>
+              <p>&quot;Tapi biasa aja.&quot;</p>
+              <p>&quot;Lama-lama...&quot;</p>
+              <p>&quot;Capek juga jadi hal yang biasa.&quot;</p>
+              <p>Ruangan kembali hening. Beberapa detik kemudian, Nicholass kembali membuka suara.</p>
+              <p>&quot;Dari kecil...&quot;</p>
+              <p>&quot;Nicho juga gak pernah lepas dari beban.&quot;</p>
+              <p>&quot;Keluarga Nicho kelihatannya baik-baik aja.&quot;</p>
+              <p>&quot;Padahal...&quot;</p>
+              <p>&quot;Gak semuanya seindah itu.&quot;</p>
+              <p>&quot;Nicho masih punya adik-adik.&quot;</p>
+              <p>&quot;Nicho selalu mikir...&quot;</p>
+              <p>&quot;Mereka jangan sampai ikut ngerasain beban yang Nicho rasain.&quot;</p>
+              <p>&quot;Kalau Nicho bisa tahan...&quot;</p>
+              <p>&quot;Ya udah.&quot;</p>
+              <p>&quot;Biar Nicho aja.&quot;</p>
+              <p>Air mata Liu kembali menggenang. Namun kali ini ia berusaha menahannya. Ia gak mau memotong cerita Nicholass.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Nicho boleh minta tolong satu hal?&quot;</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>&quot;Apa aja.&quot;</p>
+              <p>Nicholass menarik napas pelan.</p>
+              <p>&quot;Hari ini...&quot;</p>
+              <p>&quot;Nicho baru sadar.&quot;</p>
+              <p>&quot;Ternyata bukan cuma Nicho yang hidup kayak gini.&quot;</p>
+              <p>&quot;Selama ini...&quot;</p>
+              <p>&quot;Nicho cuma sadar satu orang.&quot;</p>
+              <p>&quot;Alvaro.&quot;</p>
+              <p>&quot;Dia sahabat Nicho.&quot;</p>
+              <p>&quot;Tapi...&quot;</p>
+              <p>&quot;Sekarang dia udah gak ada.&quot;</p>
+              <p>&quot;Selain Alvaro..”</p>
+              <p>&quot;Nicho gak pernah sadar lagi.&quot;</p>
+              <p>&quot;Sampai hari ini.&quot;</p>
+              <p>&quot;Waktu Liu cerita soal Javier.&quot;</p>
+              <p>&quot;Nicho baru ngerti.&quot;</p>
+              <p>&quot;Ternyata...&quot;</p>
+              <p>&quot;Nicho gak sendirian.&quot;</p>
+              <p>Ia tersenyum tipis. Namun senyum itu segera memudar.</p>
+              <p>&quot;Cuma...&quot;</p>
+              <p>&quot;Setiap Nicho sadar ada orang yang lagi switch...&quot;</p>
+              <p>&quot;Otak Nicho langsung rame.&quot;</p>
+              <p>&quot;Berisik.&quot;</p>
+              <p>&quot;Kadang sampai sakit kepala.&quot;</p>
+              <p>&quot;Kadang Nicho jadi bingung.&quot;</p>
+              <p>&quot;Mana pikiran Nicho.&quot;</p>
+              <p>&quot;Mana yang bukan.&quot;</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Kalau nanti Liu sadar lebih dulu...&quot;</p>
+              <p>&quot;...ada orang yang lagi switch.&quot;</p>
+              <p>&quot;Tolong...&quot;</p>
+              <p>&quot;Alihin perhatian Nicho.&quot;</p>
+              <p>&quot;Ajak Nicho ngobrol.&quot;</p>
+              <p>&quot;Ajak jalan.&quot;</p>
+              <p>&quot;Bahas apa aja.&quot;</p>
+              <p>&quot;Asal perhatian Nicho pindah.&quot;</p>
+              <p>&quot;Itu cukup ngebantu.&quot;</p>
+              <p>Liu langsung mengangguk mantap.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Liu janji.&quot;</p>
+              <p>&quot;Mulai sekarang...&quot;</p>
+              <p>&quot;Liu bakal lebih peka.&quot;</p>
+              <p>&quot;Kalau Nicho mulai gak nyaman...&quot;</p>
+              <p>&quot;Liu alihin perhatian Nicho.&quot;</p>
+              <p>&quot;Nicho gak perlu ngadepin semuanya sendirian lagi.&quot;</p>
+              <p>Mendengar jawaban itu, senyum Nicholass perlahan kembali muncul. Namun beberapa saat kemudian ia kembali berkata pelan.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kalau suatu hari...&quot;</p>
+              <p>&quot;Nicho lagi gak baik-baik aja.&quot;</p>
+              <p>&quot;Atau...&quot;</p>
+              <p>&quot;Yang muncul bukan Nicho.&quot;</p>
+              <p>&quot;Liu gak usah maksain diri buat nenangin.&quot;</p>
+              <p>&quot;Kalau Liu takut...&quot;</p>
+              <p>&quot;Jauhin aja.&quot;</p>
+              <p>&quot;Itu lebih aman.&quot;</p>
+              <p>Belum selesai ia berbicara, Liu langsung menggeleng cepat.</p>
+              <p>&quot;Gak.&quot;</p>
+              <p>&quot;Liu gak akan pergi.&quot;</p>
+              <p>&quot;Kalau Nicho lagi kacau...&quot;</p>
+              <p>&quot;Liu temenin.&quot;</p>
+              <p>&quot;Kalau Nicho lagi capek...&quot;</p>
+              <p>&quot;Liu juga temenin.&quot;</p>
+              <p>&quot;Kalau Nicho takut...&quot;</p>
+              <p>&quot;Liu tetep di samping Nicho.&quot;</p>
+              <p>&quot;Liu gak mau Nicho sendirian lagi.&quot;</p>
+              <p>Tatapan mereka kembali bertemu. Nicholass mengusap lembut tangan Liu.</p>
+              <p>&quot;Maaf ya...&quot;</p>
+              <p>&quot;Nicho egois.&quot;</p>
+              <p>&quot;Nicho milih Liu.&quot;</p>
+              <p>&quot;Nicho pengin terus sama Liu.&quot;</p>
+              <p>&quot;Padahal...&quot;</p>
+              <p>&quot;Nicho banyak kurangnya.&quot;</p>
+              <p>&quot;Mungkin...&quot;</p>
+              <p>&quot;Suatu saat bikin Liu ikut capek.&quot;</p>
+              <p>Liu menggeleng sambil tersenyum. &quot;Enggak.&quot;</p>
+              <p>&quot;Liu juga milih Nicho.&quot;</p>
+              <p>&quot;Jadi...&quot;</p>
+              <p>&quot;Jangan pernah nyuruh Liu pergi.&quot;</p>
+              <p>&quot;Terus sama Liu...&quot;</p>
+              <p>&quot;Untuk waktu yang lama.&quot;</p>
+              <p>&quot;Liu mohon.&quot;</p>
+              <p>Suara Liu kembali bergetar. Nicholass tersenyum hangat. Perlahan ia mendekat. Mengecup singkat bibir Liu. Lalu menyandarkan dahinya pada dahi lelaki itu.</p>
+              <p>&quot;Nicho bakal terus berusaha.&quot;</p>
+              <p>&quot;Buat selalu sama Liu...&quot;</p>
+              <p>&quot;Untuk waktu yang lama.&quot;</p>
+              <p>Liu tersenyum. Kali ini bukan karena sedih. Melainkan karena lega. Lelaki yang ia cintai akhirnya mempercayakan seluruh dirinya kepada Liu. Malam semakin larut. Buku-buku masih terbuka di atas meja. Laptop masih menyala. Pensil, buku catatan, dan sketh book masih berserakan di meja dekat sofa mereka berada. Tak ada satu pun dari mereka yang sempat membereskannya. Karena tanpa sadar...</p>
+              <p>Setelah percakapan panjang yang menguras hati itu...</p>
+              <p>Nicholass dan Liu tertidur di sofa. Masih saling menggenggam tangan. Masih saling bersandar. Dan untuk pertama kalinya...</p>
+              <p>Perang sunyi di dalam kepala Nicholass terasa sedikit lebih tenang. Karena kini...</p>
+              <p>Ia tahu. Di sisinya...</p>
+              <p>Ada seseorang yang memilih tetap tinggal.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-7">Bab 7</a><a class="primary-button" href="#chapter-9">Bab 9</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-9">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 09</p>
+            <h2>Bab 9</h2>
+              <p>Malam setelah percakapan panjang itu...</p>
+              <p>Tidak ada yang benar-benar berubah. Namun...</p>
+              <p>Di saat yang bersamaan, semuanya terasa berbeda. Hubungan Nicholass dan Liu menjadi jauh lebih dekat dibanding sebelumnya. Bukan karena mereka lebih sering mengucapkan kata &quot;sayang&quot;. Bukan juga karena mereka semakin sering bergandengan tangan. Melainkan...</p>
+              <p>Karena kini mereka sama-sama mengetahui sisi terdalam satu sama lain. Tidak ada lagi rahasia yang disembunyikan.</p>
+              <p>Libur semester akhirnya tiba. Untuk pertama kalinya sejak menjadi mahasiswa, mereka benar-benar memiliki waktu luang. Pagi itu...</p>
+              <p>Liu berdiri di dapur apartemennya sambil mengenakan celemek sederhana.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Iya?&quot;</p>
+              <p>&quot;Mau sarapan apa?&quot;</p>
+              <p>Nicholass yang masih duduk di sofa menoleh.</p>
+              <p>&quot;Terserah.&quot;</p>
+              <p>&quot;Asal buatan Liu.&quot;</p>
+              <p>Liu terkekeh.</p>
+              <p>&quot;Jawabannya gampang banget.&quot;</p>
+              <p>&quot;Soalnya emang enak.&quot;</p>
+              <p>&quot;Kalau gak enak?&quot;</p>
+              <p>&quot;Ya tetep enak.&quot;</p>
+              <p>Liu menggeleng geli.</p>
+              <p>&quot;Dasar.&quot;</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Suara minyak yang mendesis memenuhi dapur. Nicholass diam-diam menghampiri dari belakang. Ia menyandarkan dagunya di bahu Liu.</p>
+              <p>&quot;Laper...&quot;</p>
+              <p>&quot;Sabaaaar.&quot;</p>
+              <p>&quot;Lima menit lagi.&quot;</p>
+              <p>&quot;Peluk dulu.&quot;</p>
+              <p>Liu terkekeh pelan.</p>
+              <p>&quot;Manja.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Gak boleh?&quot;</p>
+              <p>&quot;Boleh banget.&quot;</p>
+              <p>Liu mematikan kompor sejenak. Lalu membalikkan badan. Memeluk Nicholass sebentar.</p>
+              <p>&quot;Cukup?&quot;</p>
+              <p>&quot;Kurang. Nambah.&quot;</p>
+              <p>Liu tertawa kecil. Ia kembali memeluk Nicholass lebih erat beberapa detik.</p>
+              <p>&quot;Nah. Udah. Nyiapin sarapan dulu ini, kalau gak makan nanti malah sakit.&quot;</p>
+              <p>Nicholass mengangguk patuh.</p>
+              <p>&quot;Iya, Chef Liu.&quot;</p>
+              <p>Hari-hari liburan mereka diisi dengan hal-hal sederhana. Belanja kebutuhan dapur bersama. Berebut memilih camilan di minimarket.</p>
+              <p>Menggambar di ruang tamu.</p>
+              <p>Menonton film sampai lupa waktu.</p>
+              <p>Kadang...</p>
+              <p>Mereka hanya duduk di balkon apartemen sambil menikmati langit sore tanpa banyak bicara. Bagi mereka...</p>
+              <p>Kebersamaan seperti itu sudah lebih dari cukup.</p>
+              <p>Sore itu...</p>
+              <p>Liu sedang merapikan beberapa buku di rak. Tanpa sengaja...</p>
+              <p>Ia melihat Nicholass menguap untuk kesekian kalinya.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Ngantuk?&quot;</p>
+              <p>Nicholass menggeleng.</p>
+              <p>&quot;Gak.&quot;</p>
+              <p>&quot;Tapi tadi nguap.&quot;</p>
+              <p>&quot;Refleks.&quot;</p>
+              <p>Liu mengangguk pelan. Namun...</p>
+              <p>Ia mulai menyadari sesuatu. Sudah beberapa hari terakhir...</p>
+              <p>Di bawah mata Nicholass muncul lingkaran hitam yang semakin jelas. Wajahnya juga terlihat jauh lebih pucat. Awalnya Liu mengira itu hanya karena latihan yang melelahkan. Namun...</p>
+              <p>Perasaannya mengatakan ada yang tidak beres.</p>
+              <p>Malam harinya...</p>
+              <p>Seperti biasa, Nicholass kembali menginap. Mereka menghabiskan waktu menggambar bersama di ruang tamu. Jarum jam menunjukkan pukul satu dini hari. Liu menguap pelan.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Ngantuk gak?&quot;</p>
+              <p>Nicholass masih fokus menggerakkan pensil di atas kertas.</p>
+              <p>&quot;Belum.&quot;</p>
+              <p>&quot;Serius?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Liu tidur aja dulu.&quot;</p>
+              <p>&quot;Lah?&quot;</p>
+              <p>&quot;Terus Nicho?&quot;</p>
+              <p>&quot;Nanti nyusul.&quot;</p>
+              <p>Liu menatap wajah Nicholass beberapa saat. Tatapannya perlahan berubah khawatir.</p>
+              <p>&quot;Nicho... Udah berapa lama susah tidur?&quot;</p>
+              <p>Pertanyaan itu membuat gerakan tangan Nicholass terhenti. Ruangan kembali sunyi. Beberapa detik berlalu sebelum ia akhirnya menjawab pelan.</p>
+              <p>&quot;...Dua minggu hehehe&quot;</p>
+              <p>Liu langsung menoleh.</p>
+              <p>&quot;Dua minggu?&quot;</p>
+              <p>Nicholass mengangguk pelan.</p>
+              <p>&quot;Biasa sayang lagi di fase turun jadi kadang Susah tidur atau malah tidur terus. Bahkan kalau badan capek otaknya tetap gak mau berhenti.&quot;</p>
+              <p>Liu menggenggam tangan Nicholass.</p>
+              <p>&quot;Kenapa gak cerita?&quot;</p>
+              <p>Nicholass tersenyum tipis.</p>
+              <p>&quot;Gak papa sayang, aman kok semua. Nanti juga lewat sendiri.&quot;</p>
+              <p>&quot;Lagian Nicho udah biasa, tinggal nunggu lewat aja sambil nenangin pikiran.&quot;</p>
+              <p>&quot;Lagi-lagi bilang udah biasa.&quot;</p>
+              <p>gumam Liu lirih. Ia menghela napas pelan.</p>
+              <p>&quot;Mulai sekarang kalau ada apa-apa cerita, jangan dipendem sendiri. Jadi diri sendiri untuk liu, dan jangan terus maksa diri buat selalu kuat. Selama sama liu, nicho boleh ngeluh atau istirahat kalau capek&quot;</p>
+              <p>Nicholass mengangguk.</p>
+              <p>&quot;Iya. Terimakasih banyak sayang&quot;</p>
+              <p>Hari-hari berikutnya...</p>
+              <p>Kondisi Nicholass bukannya membaik. Ia tetap tersenyum. Tetap bercanda. Tetap mengajak Liu jalan sore.</p>
+              <p>Namun...</p>
+              <p>Liu semakin sering memergoki Nicholass melamun. Tatapannya kosong. Kadang memegang kepala cukup lama. Kadang hanya duduk diam memandangi langit dari balkon.</p>
+              <p>&quot;Nicho?&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kepala sakit?&quot;</p>
+              <p>&quot;Dikit.&quot;</p>
+              <p>&quot;Minum obat?&quot;</p>
+              <p>&quot;Nanti.&quot;</p>
+              <p>&quot;Nanti lagi.&quot;</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Iya?&quot;</p>
+              <p>&quot;Jangan bandel.&quot;</p>
+              <p>Nicholass hanya tersenyum kecil sambil membuat gestur hormat dihadapan liu.</p>
+              <p>&quot;Siap laksanakan baginda&quot;</p>
+              <p>Sore itu...</p>
+              <p>Mereka baru saja pulang dari minimarket. Di tangan Liu ada dua kantong belanja. Sementara Nicholass membawa beberapa minuman.</p>
+              <p>Setelah ia letakkan belanjaan diatas meja, tubuhnya ikut limbung diatas sofa.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>Wajah Nicholass terlihat pucat. Napasnya sedikit memburu. Matanya berusaha tetap terbuka.</p>
+              <p>&quot;Maaf... Kayaknya... Badan Nicho akhirnya protes hehehe&quot;</p>
+              <p>&quot;Nicho. Jangan ngomong dulu.&quot;</p>
+              <p>Liu buru-buru membantu Nicholass duduk di sofa. Tangannya langsung menyentuh dahi lelaki itu.</p>
+              <p>Panas.</p>
+              <p>Sangat panas.</p>
+              <p>&quot;Loh... Demam...&quot;</p>
+              <p>Nicholass tersenyum lemah.</p>
+              <p>&quot;Iya kayaknya hehe...&quot;</p>
+              <p>Liu menggigit bibir bawahnya pelan. Rasa panik mulai memenuhi dadanya. Tanpa membuang waktu, ia segera mengambil termometer dan kotak P3K yang ada di lemari.</p>
+              <p>Malam itu...</p>
+              <p>Liu memutuskan satu hal. Apa pun yang terjadi...</p>
+              <p>Ia tidak akan membiarkan Nicholass melewati malam panjang itu sendirian.</p>
+              <p>Liu segera mengambil termometer dari laci ruang tamu. Tangannya masih sedikit gemetar.</p>
+              <p>&quot;Nicho. Coba buka mulut.&quot;</p>
+              <p>Nicholass menurut tanpa banyak bicara. Beberapa detik kemudian...</p>
+              <p>Termometer itu berbunyi. 38,9°C. Liu langsung menghela napas panjang.</p>
+              <p>&quot;Pantes aja badan Nicho panas.&quot;</p>
+              <p>Nicholass hanya tersenyum kecil.</p>
+              <p>&quot;Yang penting gak sampe kejang kejang sayang... Hehehe...&quot;</p>
+              <p>Liu langsung menatapnya.</p>
+              <p>&quot;Masih sempet ngeyel. Udah demam tinggi begini.&quot;</p>
+              <p>Nicholass terkekeh pelan.</p>
+              <p>&quot;Maaf...&quot;</p>
+              <p>&quot;Gak lucu nicholass.&quot;</p>
+              <p>&quot;Iya...&quot;</p>
+              <p>Liu segera mengambil baskom kecil berisi air hangat dan selembar handuk. Perlahan ia mengompres dahi Nicholass. Gerakannya begitu hati-hati. Seolah takut sedikit saja membuat lelaki itu merasa tidak nyaman.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kalau pusing bilang.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Kalau mual bilang.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Kalau butuh apa-apa bilang.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Liu menghela napas.</p>
+              <p>&quot;Jawabnya iya semua.&quot;</p>
+              <p>&quot;Soalnya Liu cerewet.&quot;</p>
+              <p>&quot;Biarin.&quot;</p>
+              <p>&quot;Cerewet karena sayang.&quot;</p>
+              <p>Ucapan itu membuat Nicholass tersenyum tipis. Sudah lama...</p>
+              <p>Tidak ada yang mengurusnya sedetail ini.</p>
+              <p>Malam semakin larut. Obat penurun demam sudah diminum. Sup hangat yang dibuat Liu juga berhasil masuk meski hanya beberapa sendok. Namun...</p>
+              <p>Jarum jam sudah menunjukkan pukul setengah dua pagi. Nicholass masih terjaga. Ia duduk bersandar di sofa. Tatapannya kosong mengarah ke jendela. Liu yang baru selesai mencuci mangkuk menghampirinya.</p>
+              <p>&quot;Belum bisa tidur?&quot;</p>
+              <p>Nicholass menggeleng pelan.</p>
+              <p>&quot;Gak bisa.&quot;</p>
+              <p>&quot;Lagi mikirin apa sayang?&quot;</p>
+              <p>Nicholass menatal langit-langit sesaat.</p>
+              <p>&quot;Kalau kayak gini... Badan capek tapi kepala gak mau istirahat.&quot;</p>
+              <p>Liu duduk di sampingnya.</p>
+              <p>&quot;Gimana biasanya Nicho nenangin diri?&quot;</p>
+              <p>Nicholass terdiam beberapa saat.</p>
+              <p>&quot;Gambar. Kalau gak ya cuman duduk nulis sesuatu sampai ketiduran.&quot;</p>
+              <p>Liu langsung berdiri.</p>
+              <p>&quot;Tunggu.&quot;</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Ia kembali membawa sketch book, pensil, dan alat tulis lainnya.</p>
+              <p>&quot;Nih. Gambar aja apa yang nicho pikirin coba. Nanti Liu temenin.&quot;</p>
+              <p>Nicholass menatap Liu cukup lama.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Gak usah ditemenin sayang, Udah male, Liu tidur aja.&quot;</p>
+              <p>Liu langsung menggeleng.</p>
+              <p>&quot;Gak. Nanti aja tidurnya bentar lagi, Nicho dulu.&quot;</p>
+              <p>&quot;Tapi Nicho gak tau bakal selesai jam berapa.&quot;</p>
+              <p>&quot;Gak apa-apa. Liu temenin.&quot;</p>
+              <p>Mendengar jawaban itu, Nicholass hanya bisa tersenyum kecil. Ia mengambil pensil. Mulai membuat garis-garis tipis di atas kertas. Ruangan kembali hening. Hanya terdengar suara gesekan pensil. Sesekali Liu melirik gambar yang perlahan mulai terbentuk. Ia tidak bertanya.</p>
+              <p>Ia tahu...</p>
+              <p>Menggambar adalah cara Nicholass meredakan perang di dalam kepalanya.</p>
+              <p>Waktu terus berjalan. Pukul dua dini hari. Lalu...</p>
+              <p>Setengah tiga. Liu beberapa kali menguap. Matanya mulai berat. Namun ia tetap bertahan. Sesekali ia menyandarkan kepala di sofa. Sesekali memperhatikan Nicholass yang masih fokus menggambar. Tiba-tiba...</p>
+              <p>Pensil di tangan Nicholass berhenti. Ia menoleh.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Ngantuk.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Terus kenapa belum tidur?&quot;</p>
+              <p>&quot;Soalnya Nicho juga belum tidur.&quot;</p>
+              <p>&quot;Nanti Liu sakit.&quot;</p>
+              <p>&quot;Gak.&quot;</p>
+              <p>&quot;Nicho juga lagi gak baik-baik aja. Liu gak mau ninggalin.&quot;</p>
+              <p>Kalimat itu membuat dada Nicholass terasa hangat. Ia menunduk pelan.</p>
+              <p>&quot;Liu...&quot;</p>
+              <p>&quot;Makasih.&quot;</p>
+              <p>&quot;Buat apa?&quot;</p>
+              <p>&quot;Udah selalu nemenin Nicho disetiap keadaan.&quot;</p>
+              <p>&quot;Padahal pasti capek.&quot;</p>
+              <p>Liu tersenyum lembut.</p>
+              <p>&quot;Kalau yang duduk di sini Liu... Nicho juga bakal ngelakuin hal yang sama kan?&quot;</p>
+              <p>Tanpa berpikir lama, Nicholass mengangguk.</p>
+              <p>&quot;Pasti.&quot;</p>
+              <p>&quot;Nah. Berarti impas.&quot;</p>
+              <p>Mereka saling tersenyum kecil. Untuk pertama kalinya malam itu...</p>
+              <p>Tatapan Nicholass terlihat jauh lebih tenang. Suara-suara di dalam kepalanya perlahan mulai mereda. Bukan karena semuanya hilang.</p>
+              <p>Tetapi...</p>
+              <p>Karena kini ada seseorang yang memilih tetap tinggal bersamanya.</p>
+              <p>Menjelang pukul tiga pagi...</p>
+              <p>Kelopak mata Nicholass mulai terasa berat. Pensil yang tadi masih berada di tangannya perlahan terjatuh ke atas buku gambar.</p>
+              <p>&quot;Nicho?&quot;</p>
+              <p>&quot;Hm...&quot;</p>
+              <p>&quot;Ngantuk?&quot;</p>
+              <p>&quot;Iya... &quot;Udah mulai lowbet ini.&quot;</p>
+              <p>Liu tersenyum lega.</p>
+              <p>&quot;Yaudah.. Tidur ya.&quot;</p>
+              <p>Nicholass mengangguk pelan. Namun sebelum memejamkan mata...</p>
+              <p>Ia meraih tangan Liu. Menggenggamnya pelan.</p>
+              <p>&quot;Jangan pergi dulu.&quot;</p>
+              <p>Liu membalas genggaman itu.</p>
+              <p>&quot;Gak akan sayang, Liu di sini. Liu selalu sama Nicho...&quot;</p>
+              <p>Mendengar jawaban itu...</p>
+              <p>Nicholass akhirnya memejamkan mata. Beberapa menit kemudian...</p>
+              <p>Napasnya mulai teratur. Ia benar-benar tertidur. Liu menatap wajah lelaki itu cukup lama. Lalu mengusap pelan rambut yang sedikit berantakan.</p>
+              <p>&quot;Selamat tidur Sayang... I love you&quot;</p>
+              <p>Ia tetap duduk di samping Nicholass. Meski matanya sudah terasa sangat berat. Hingga tanpa sadar...</p>
+              <p>Liu ikut tertidur sambil menyandarkan kepalanya di bahu Nicholass. Di atas meja...</p>
+              <p>Masih ada semangkuk sup yang belum habis.</p>
+              <p>Obat.</p>
+              <p>Termometer.</p>
+              <p>Buku gambar.</p>
+              <p>Dan segelas air hangat yang mulai kehilangan uapnya. Malam itu...</p>
+              <p>Tidak ada kata-kata manis.</p>
+              <p>Tidak ada hadiah.</p>
+              <p>Tidak ada pelukan panjang.</p>
+              <p>Hanya ada dua orang yang sama-sama lelah. Satu berusaha bertahan dari perang di dalam kepalanya.</p>
+              <p>Satu lagi memilih tetap tinggal dan terus menemani...</p>
+              <p>Sampai perang itu perlahan menjadi lebih tenang. Dan tanpa mereka sadari...</p>
+              <p>Malam itu menjadi malam pertama bagi Nicholass merasakan arti sebuah rumah. Bukan tempat. Melainkan...</p>
+              <p>Seseorang.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-8">Bab 8</a><a class="primary-button" href="#chapter-10">Bab 10</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-10">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 10</p>
+            <h2>Bab 10</h2>
+              <p>Libur semester akhirnya benar-benar dimulai.</p>
+              <p>Untuk pertama kalinya setelah berbulan-bulan disibukkan dengan kuliah, latihan, dan berbagai kegiatan kampus, Nicholass dan Liu memiliki waktu yang lebih banyak untuk beristirahat.</p>
+              <p>Mereka memang tidak lagi tinggal di apartemen.</p>
+              <p>Selama liburan...</p>
+              <p>Liu memilih pulang ke rumah dan menghabiskan waktu bersama Mami serta adik-adiknya.</p>
+              <p>Sementara Nicholass tinggal di rumah kakak perempuan angkatnya, orang yang selama ini merawatnya sejak ia memutuskan pindah ke kota itu untuk kuliah.</p>
+              <p>Meski tinggal terpisah...</p>
+              <p>Hampir setiap hari mereka tetap bertemu. Kadang Nicholass yang datang ke rumah Liu. Kadang Liu yang berkunjung ke rumah kakak angkat Nicholass.</p>
+              <p>Bagi mereka...</p>
+              <p>Jarak hanya sebatas alamat rumah. Bukan alasan untuk berhenti saling menemani.</p>
+              <p>Pagi itu...</p>
+              <p>Liu sedang membantu mommy menyiapkan sarapan ketika ponselnya bergetar.</p>
+              <p>Doudou 🩵</p>
+              <p>«&quot;Sayang, bangun belum?&quot;»</p>
+              <p>Liu tersenyum kecil.</p>
+              <p>«&quot;Udah.&quot;»</p>
+              <p>Tak sampai lima detik...</p>
+              <p>Balasan kembali masuk.</p>
+              <p>«&quot;Nicho bentar lagi ke rumah ya.&quot;»</p>
+              <p>«&quot;Mau jemput Liu.&quot;»</p>
+              <p>Liu mengangkat kedua alisnya.</p>
+              <p>«&quot;Jemput buat apa?&quot;»</p>
+              <p>«&quot;Rahasia.&quot;»</p>
+              <p>Liu tertawa pelan.</p>
+              <p>«&quot;Yaudah.&quot;»</p>
+              <p>«&quot;Liu tunggu.&quot;»</p>
+              <p>Sekitar tiga puluh menit kemudian...</p>
+              <p>Suara bel rumah berbunyi. Ting...</p>
+              <p>Salah satu adik Liu langsung berlari menuju pintu.</p>
+              <p>&quot;Kak Liuuu!&quot;</p>
+              <p>&quot;Kayaknya tamu!&quot;</p>
+              <p>Liu yang sedang membawa dua gelas air segera berjalan ke ruang depan. Begitu pintu dibuka...</p>
+              <p>Senyum di wajahnya langsung mengembang.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>Pagi itu Nicholass berdiri di depan rumah sambil membawa sebuah paper bag berisi beberapa roti hangat.</p>
+              <p>&quot;Pagi malaikat cantik nicho. Ini buat sarapan.&quot;</p>
+              <p>&quot;Loh?&quot;</p>
+              <p>&quot;Kenapa repot-repot?&quot;</p>
+              <p>&quot;Soalnya... Nicho pengin sarapan bareng keluarga Liu.&quot;</p>
+              <p>Belum sempat Liu menjawab...</p>
+              <p>Seorang perempuan paruh baya keluar dari dapur sambil mengusap kedua tangannya dengan celemek.</p>
+              <p>&quot;Liu?&quot;</p>
+              <p>&quot;Siapa itu?&quot;</p>
+              <p>Liu langsung menoleh.</p>
+              <p>&quot;Mommy. Ini Nicholass.&quot;</p>
+              <p>&quot;Nicho... Mommy Liu.&quot;</p>
+              <p>Nicholass langsung menundukkan sedikit badannya dengan sopan.</p>
+              <p>&quot;Selamat pagi, Tante.&quot;</p>
+              <p>Mommy tersenyum hangat.</p>
+              <p>&quot;Ini Nicho ya?&quot;</p>
+              <p>&quot;Iya, Tante.&quot;</p>
+              <p>&quot;Yang sering Liu ceritain itu?&quot;</p>
+              <p>Wajah Liu langsung memerah.</p>
+              <p>&quot;Mom... Apaan sih.&quot;</p>
+              <p>Nicholass menoleh sambil menahan tawa.</p>
+              <p>&quot;Oh... Berarti Liu sering cerita ya?&quot;</p>
+              <p>Liu langsung menyenggol pelan lengan Nicholass.</p>
+              <p>&quot;Jangan senyum-senyum gitu.&quot;</p>
+              <p>Mommy tertawa kecil melihat tingkah mereka.</p>
+              <p>&quot;Udah.&quot;</p>
+              <p>&quot;Masuk dulu. Jangan di luar.&quot;</p>
+              <p>&quot;Iya, Tante.&quot;</p>
+              <p>Suasana rumah yang semula tenang berubah ramai. Adik-adik Liu yang awalnya hanya mengintip dari balik pintu kini mulai mendekat. Salah satu dari mereka menatap Nicholass penuh rasa penasaran.</p>
+              <p>&quot;Kak...&quot;</p>
+              <p>&quot;Kakak ini pacarnya Kak Liu ya?&quot;</p>
+              <p>Pertanyaan polos itu membuat Liu hampir tersedak air minumnya.</p>
+              <p>&quot;Dek.. Jangan langsung nanya gitu.&quot;</p>
+              <p>Namun Nicholass justru tertawa kecil.</p>
+              <p>&quot;Iya. Pacarnya Kak Liu.&quot;</p>
+              <p>Anak kecil itu langsung tersenyum lebar.</p>
+              <p>&quot;Yeay!&quot;</p>
+              <p>&quot;Akhirnya Kak Liu punya pacar!&quot;</p>
+              <p>Semua orang di ruang makan langsung tertawa. Liu menutup wajahnya dengan kedua tangan.</p>
+              <p>&quot;Malu...&quot;</p>
+              <p>Nicholass justru semakin menggoda.</p>
+              <p>&quot;Lucu.&quot;</p>
+              <p>&quot;Gak usah diliatin.&quot;</p>
+              <p>&quot;Orang lucu.&quot;</p>
+              <p>Sarapan pagi berlangsung hangat. Mommy beberapa kali mengambilkan lauk untuk Nicholass.</p>
+              <p>&quot;Nambah ya. Masih banyak.&quot;</p>
+              <p>&quot;Terima kasih, Tante.&quot;</p>
+              <p>&quot;Makan yang banyak. Liu sering bilang kamu jarang sarapan.&quot;</p>
+              <p>Liu langsung menoleh.</p>
+              <p>&quot;Mommy...&quot;</p>
+              <p>Nicholass terkekeh pelan.</p>
+              <p>&quot;Pantes... Ternyata semua rahasia Nicho dibongkar.&quot;</p>
+              <p>&quot;Liu cuma khawatir.&quot;</p>
+              <p>&quot;Katanya cuma sedikit cerita.&quot;</p>
+              <p>&quot;Sedikit. Tapi lengkap.&quot;</p>
+              <p>Mommy kembali tertawa. Melihat mereka saling menggoda seperti itu membuat suasana rumah terasa hidup.</p>
+              <p>Setelah sarapan selesai...</p>
+              <p>Adik-adik Liu menarik tangan Nicholass.</p>
+              <p>&quot;Kak Nicho!&quot;</p>
+              <p>&quot;Main yuk!&quot;</p>
+              <p>&quot;Mau.&quot;</p>
+              <p>&quot;Tapi main apa?&quot;</p>
+              <p>&quot;Mabar!&quot;</p>
+              <p>&quot;Siap.&quot;</p>
+              <p>Tak butuh waktu lama...</p>
+              <p>Ruang keluarga dipenuhi suara tawa. Kadang terdengar adik Liu bersorak karena menang. Kadang terdengar Nicholass pura-pura protes karena sengaja dikalahkan. Liu yang duduk di sofa hanya bisa tersenyum. Melihat pemandangan itu membuat hatinya terasa hangat.</p>
+              <p>Tanpa sadar...</p>
+              <p>Mommy duduk di sampingnya.</p>
+              <p>&quot;Dia baik.&quot;</p>
+              <p>Liu mengangguk.</p>
+              <p>&quot;Iya. Baik banget.&quot;</p>
+              <p>Mommy menatap Nicholass yang sedang tertawa bersama anak-anak.</p>
+              <p>&quot;Yang langgeng ya... Kalau dia macem-macem ngomong sama mommy.&quot;</p>
+              <p>Kalimat itu membuat Liu sedikit terkejut.</p>
+              <p>&quot;Mommu?&quot;</p>
+              <p>&quot;Orang yang terlalu sering bikin orang lain ketawa...&quot;</p>
+              <p>&quot;Biasanya justru paling sering nyembunyiin sedihnya sendiri. Tapi gak menutup kemungkinan dia sepenuhnya orang baik juga&quot;</p>
+              <p>Liu menatap ke arah Nicholass. Senyum di wajah lelaki itu memang terlihat begitu tulus.</p>
+              <p>Namun...</p>
+              <p>Liu tahu. Di balik senyum itu, ada begitu banyak luka yang belum sepenuhnya sembuh. Liu mengangguk pelan.</p>
+              <p>&quot;Iya, Mom.&quot;</p>
+              <p>&quot;Doain kita terus aja ya...&quot;</p>
+              <p>Menjelang sore...</p>
+              <p>Giliran Liu yang diajak Nicholass berkunjung ke rumah kakak angkatnya. Rumah itu tidak terlalu besar. Namun terasa sangat hangat.</p>
+              <p>Begitu pintu dibuka...</p>
+              <p>Seorang perempuan berusia dua puluh lima tahun langsung tersenyum lebar.</p>
+              <p>&quot;Nah! Akhirnya datang juga.&quot;</p>
+              <p>&quot;Kamu Liu ya?&quot;</p>
+              <p>Liu mengangguk sopan.</p>
+              <p>&quot;Iya, Kak.&quot;</p>
+              <p>&quot;Salam kenal.&quot;</p>
+              <p>Perempuan itu langsung menjabat tangan Liu.</p>
+              <p>&quot;Salam kenal, Aku Moura. Yang selama ini sering pusing ngurus bocah bandel itu.&quot;</p>
+              <p>Sambil menunjuk Nicholass.</p>
+              <p>&quot;Bener tapi salah. Kapan gua gak bandel kak??&quot;</p>
+              <p>Kak Moura langsung menaikkan sebelah alisnya.</p>
+              <p>&quot;Oh ya gak pernah bandel?&quot;</p>
+              <p>&quot;Siapa yang kalau lagi sakit susah disuruh minum obat?&quot;</p>
+              <p>Nicholass langsung terdiam.</p>
+              <p>&quot;Siapa yang kalau begadang disuruh tidur malah bilang lima menit lagi?&quot;</p>
+              <p>&quot;...&quot;</p>
+              <p>&quot;Siapa yang menuhin kulkas pake es kopi?&quot;</p>
+              <p>&quot;...&quot;</p>
+              <p>Liu mulai menahan tawa. Kak Moura melanjutkan.</p>
+              <p>&quot;Siapa yang pernah demam tapi masih maksa keluar beli sketchbook?&quot;</p>
+              <p>&quot;Oke. Cukup.&quot;</p>
+              <p>Nicholass langsung memukul pelan lengan kak Moura.</p>
+              <p>&quot;Mending diem ajalah Kak.&quot;</p>
+              <p>Kak Moura justru tertawa puas dan menjulurkan lidah kepadanya. Liu tak bisa menahan tawanya lagi. Baru kali ini...</p>
+              <p>Ia melihat Nicholass benar-benar tidak bisa membalas godaan seseorang. Dan entah kenapa...</p>
+              <p>Pemandangan itu terasa begitu menggemaskan.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-9">Bab 9</a><a class="primary-button" href="#chapter-11">Bab 11</a></nav>
+          </div>
+        </article>
+        <article class="page reading-page chapter-page" id="chapter-11">
+          <div class="reading-card prose-card">
+            <p class="kicker">Chapter 11</p>
+            <h2>Bab 11</h2>
+              <p>Musim liburan hampir berakhir. Hari-hari yang mereka jalani terasa begitu sederhana. Tidak ada perjalanan ke luar kota. Tidak ada liburan mewah. Hanya kunjungan-kunjungan kecil yang selalu mereka nantikan. Kadang Nicholass datang ke rumah Liu. Kadang Liu yang mampir ke rumah Kak Aira.</p>
+              <p>Sesederhana makan siang bersama. Menggambar di teras rumah. Membantu Mami memasak. Atau sekadar berjalan kaki membeli es krim di minimarket dekat kompleks.</p>
+              <p>Namun...</p>
+              <p>Bagi mereka, kebahagiaan memang sesederhana itu. Selama masih bisa saling melihat. Selama masih bisa saling menyapa. Hari itu sudah terasa sempurna.</p>
+              <p>Suatu sore...</p>
+              <p>Liu datang ke rumah Kak Moura sambil membawa dua kotak makanan. Ia mengetuk pintu rumah beberapa kali.</p>
+              <p>&quot;Kak Moura... Aku Boleh masuk?&quot;</p>
+              <p>&quot;Pintu gak dikunci.&quot;</p>
+              <p>Liu mendorong pintu perlahan. Begitu masuk...</p>
+              <p>Aroma masakan memenuhi seluruh ruangan. Di dapur, Kak Moura sedang sibuk memasak.</p>
+              <p>&quot;Wah Liu... Kebetulan banget.&quot;</p>
+              <p>&quot;Kak, Liu bawain makanan.&quot;</p>
+              <p>&quot;Loh? Ngapain repot-repot?&quot;</p>
+              <p>&quot;Liu masak sama Mommy tadi, katanya titip juga buat Kak Moura.&quot;</p>
+              <p>Kak Moura tersenyum hangat.</p>
+              <p>&quot;Bilangi tante makasih ya.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Liu menoleh ke ruang tamu.</p>
+              <p>&quot;Nicho mana?&quot;</p>
+              <p>Kak Moura langsung menunjuk ke arah balkon.</p>
+              <p>&quot;Itu, Lagi gambar. Katanya cari angin.&quot;</p>
+              <p>Liu berjalan pelan ke arah balkon. Benar saja. Nicholass sedang duduk di lantai sambil memangku buku gambar. Earphone masih terpasang di telinganya. Ia bahkan tidak menyadari Liu sudah berdiri di belakangnya.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>Nicholass menoleh. Wajahnya langsung berubah cerah.</p>
+              <p>&quot;Sayang! Loh? Kok gak bilang-bilang mau dateng?&quot;</p>
+              <p>&quot;Biar jadi kejutan.&quot;</p>
+              <p>Nicholass langsung menutup buku gambarnya.</p>
+              <p>&quot;Boleh peluk?&quot;</p>
+              <p>&quot;Boleh.&quot;</p>
+              <p>Tanpa ragu, Nicholass memeluk Liu cukup erat. Beberapa detik. Tanpa berkata apa-apa. Liu terkekeh pelan.</p>
+              <p>&quot;Kangen ya?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Padahal baru kemarin ketemu.&quot;</p>
+              <p>&quot;Emang, Tapi tetep kangen banget.&quot;</p>
+              <p>Liu mengusap pelan rambut Nicholass.</p>
+              <p>&quot;Manja.&quot;</p>
+              <p>&quot;Cuma sama Liu dong ini.&quot;</p>
+              <p>Menjelang malam...</p>
+              <p>Mereka membantu Kak Moura menyiapkan makan malam. Suasana dapur dipenuhi tawa.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Iya, Kak?&quot;</p>
+              <p>&quot;Tolong ambilin piring.&quot;</p>
+              <p>&quot;Oke.&quot;</p>
+              <p>&quot;Lho!&quot;</p>
+              <p>&quot;Bukan mangkok!&quot;</p>
+              <p>&quot;Eh... Salah.&quot;</p>
+              <p>Liu langsung tertawa.</p>
+              <p>&quot;Konsentrasi, Sayang.&quot;</p>
+              <p>&quot;Iya, Anu grogi.&quot;</p>
+              <p>&quot;Grogi kenapa?&quot;</p>
+              <p>&quot;Liu dari tadi liatin.&quot;</p>
+              <p>Kak Moura menggeleng sambil terkekeh.</p>
+              <p>&quot;Kalau pacaran mah pacaran aja, jangan ngajak piring ikut deg-degan.&quot;</p>
+              <p>Mereka bertiga tertawa bersamaan. Rumah kecil itu kembali terasa hangat.</p>
+              <p>Namun...</p>
+              <p>Beberapa hari kemudian...</p>
+              <p>Giliran Liu yang tumbang. Awalnya hanya demam ringan.</p>
+              <p>&quot;Liu? Kok mukanya pucet sayang??.&quot;</p>
+              <p>&quot;Gak papa kok, Cuma kecapean.&quot;</p>
+              <p>&quot;Liu yakin?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>Liu tetap memaksakan diri membantu Mommy membereskan rumah. Meski kepalanya mulai terasa berat.</p>
+              <p>Sore harinya...</p>
+              <p>Nicholass datang seperti biasa. Begitu melihat wajah Liu...</p>
+              <p>Ia langsung mengernyit.</p>
+              <p>&quot;Sayang.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Sini.&quot;</p>
+              <p>Liu menurut. Begitu dahi mereka saling bersentuhan...</p>
+              <p>Nicholass langsung menjauh lagi.</p>
+              <p>&quot;Liu Demam. Kok Liu diem aja?&quot;</p>
+              <p>&quot;Gak papa sayang&quot;</p>
+              <p>Nicholass menghela napas.</p>
+              <p>&quot;Bandel.&quot;</p>
+              <p>&quot;Gantian sekarang.&quot;</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>&quot;Nicho yang cerewet.&quot;</p>
+              <p>Liu terkekeh pelan.</p>
+              <p>&quot;Iya deh.&quot;</p>
+              <p>Malam itu...</p>
+              <p>Nicholass tidak pulang. Atas izin Mommy, ia menemani Liu beristirahat di kamarnya. Sesekali ia mengganti kompres. Sesekali membuatkan teh hangat. Sesekali menyuruh Liu minum.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Obatnya.&quot;</p>
+              <p>&quot;Gamau.&quot;</p>
+              <p>&quot;Kenapa?&quot;</p>
+              <p>&quot;Pahit.&quot;</p>
+              <p>&quot;Nanti sembuhnya lama.&quot;</p>
+              <p>Liu mengerucutkan bibirnya. &quot;Nicho suapin.&quot;</p>
+              <p>Nicholass tersenyum kecil. &quot;Manja.&quot;</p>
+              <p>&quot;Belajar dari siapa?&quot;</p>
+              <p>&quot;......&quot;</p>
+              <p>&quot;Dari Nicho.&quot;</p>
+              <p>&quot;Nah.&quot;</p>
+              <p>&quot;Itu tau.&quot;</p>
+              <p>Mereka sama-sama tertawa. Meski wajah Liu masih terlihat pucat.</p>
+              <p>Tengah malam...</p>
+              <p>Demam Liu mulai turun. Napasnya juga sudah lebih tenang. Nicholass mengusap pelan rambut Liu.</p>
+              <p>&quot;Udah mendingan?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Makasih.&quot;</p>
+              <p>&quot;Buat?&quot;</p>
+              <p>&quot;Udah nemenin Liu.&quot;</p>
+              <p>Nicholass tersenyum hangat.</p>
+              <p>&quot;Liu.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Dulu waktu Nicho sakit Liu jagain Nicho, jadi sekarang gantian. Lagian kalau salah satu dari kita sakit, yang satunya kan emang harus jadi obat.&quot;</p>
+              <p>Liu tersenyum. Tangannya perlahan menggenggam tangan Nicholass.</p>
+              <p>&quot;Kalau gitu... Janji ya.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Kalau nanti Nicho sakit lagi, Liu jagain. Kalau Liu sakit, Nicho jagain.&quot;</p>
+              <p>Nicholass mengangguk mantap.</p>
+              <p>&quot;Janji.&quot;</p>
+              <p>Malam itu...</p>
+              <p>Untuk pertama kalinya...</p>
+              <p>Liu merasakan bagaimana rasanya dirawat oleh orang yang paling ia cintai. Dan ia sadar...</p>
+              <p>Rumah bukan lagi sekadar tempat untuk pulang. Melainkan...</p>
+              <p>Seseorang yang selalu memilih tinggal.</p>
+              <p>Beberapa minggu setelah Liu sembuh...</p>
+              <p>Liburan hampir benar-benar berakhir. Hari-hari mereka kembali dipenuhi hal-hal sederhana. Pagi saling mengucapkan selamat pagi melalui pesan singkat. Siang saling mengirim foto makanan. Sore sesekali berjalan berdua mengelilingi taman dekat rumah.</p>
+              <p>Malam selalu ditutup dengan panggilan telepon sebelum tidur. Tidak ada hari yang benar-benar membosankan. Karena sesederhana apa pun harinya...</p>
+              <p>Mereka selalu punya seseorang untuk diceritakan.</p>
+              <p>Namun...</p>
+              <p>Takdir seolah ingin menguji mereka sekali lagi. Suatu pagi...</p>
+              <p>Liu tiba-tiba terbangun dengan tubuh yang terasa jauh lebih berat dari biasanya. Kepalanya berdenyut hebat. Pandangannya berkunang-kunang.</p>
+              <p>&quot;Mom...&quot;</p>
+              <p>Suara Liu terdengar pelan. Mommy yang sedang menyiapkan sarapan langsung menghampirinya.</p>
+              <p>&quot;Kenapa, Sayang?&quot;</p>
+              <p>&quot;hehehe...&quot;</p>
+              <p>Belum sempat Mommy membantunya duduk...</p>
+              <p>Darah tiba-tiba menetes dari hidung Liu. Setetes. Lalu semakin banyak.</p>
+              <p>&quot;Liu!&quot;</p>
+              <p>Mommy langsung mengambil tisu sambil memegangi bahu putranya. Namun tubuh Liu sudah kehilangan tenaga. Pandangannya menggelap.</p>
+              <p>Bruk.</p>
+              <p>Tubuhnya jatuh pingsan.</p>
+              <p>Hari itu juga...</p>
+              <p>Liu dibawa pulang ke rumah keluarganya agar lebih mudah dirawat. Dokter mengatakan tubuhnya benar-benar kelelahan. Kurang istirahat. Aktivitas yang terlalu padat. Ditambah daya tahan tubuh yang sedang menurun. Liu harus benar-benar beristirahat.</p>
+              <p>Di sisi lain...</p>
+              <p>Keadaan Nicholass ternyata tidak jauh lebih baik. Beberapa hari sebelumnya...</p>
+              <p>Ia sempat kehujanan saat perjalanan pulang. Tubuhnya yang memang sedang kurang fit akhirnya menyerah. Suhu tubuhnya turun drastis. Tekanan darahnya ikut menurun. Dokter menyarankan agar ia benar-benar beristirahat dan selalu menghangatkan tubuh. Sejak saat itu...</p>
+              <p>Kak Moura hampir tidak pernah meninggalkan Nicholass sendirian.</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>&quot;Iya, Kak?&quot;</p>
+              <p>&quot;Jangan turun dari kasur dulu.&quot;</p>
+              <p>&quot;Mau ketemu Liu bentar doang&quot;</p>
+              <p>&quot;Enggak.&quot;</p>
+              <p>&quot;Cuma sebentar.&quot;</p>
+              <p>&quot;Enggak.&quot;</p>
+              <p>&quot;Nanti pulang lagi kak...&quot;</p>
+              <p>&quot;Nicho.&quot;</p>
+              <p>Kak Moura menatapnya cukup lama.</p>
+              <p>&quot;Lagi sakit juga gini, jangan terlalu maksain diri.&quot;</p>
+              <p>&quot;Kalau dipaksa keluar yang ada malah ikut tumbang.&quot;</p>
+              <p>Nicholass terdiam.</p>
+              <p>&quot;Tapi Liu sakit..&quot;</p>
+              <p>&quot;Kakak tahu. Kalau maksain gitu yang ada Liu gak tenang, jadi khawatir juga lihat pacarnya begini&quot;</p>
+              <p>Nicholass menghela napas pelan. Meski begitu...</p>
+              <p>Sorot matanya tidak bisa menyembunyikan rasa khawatir.</p>
+              <p>Malam harinya...</p>
+              <p>Diam-diam Nicholass mengambil ponselnya. Ia menatap nama Liu beberapa detik. Lalu menekan tombol panggil. Tak lama kemudian...</p>
+              <p>Panggilan itu terhubung.</p>
+              <p>&quot;Halo...&quot;</p>
+              <p>Suara Liu terdengar pelan.</p>
+              <p>&quot;Nicho?&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Gimana badan Liu?&quot;</p>
+              <p>&quot;Masih pusing dikit.&quot;</p>
+              <p>&quot;Nicho kangen?&quot;</p>
+              <p>&quot;Iya, kangen banget daritadi dimarahin Kak Moura.&quot;</p>
+              <p>Liu terkekeh kecil.</p>
+              <p>&quot;Bandel sih.&quot;</p>
+              <p>&quot;Cuman pengen ketemu Liu. Alay banget tu orang&quot;</p>
+              <p>&quot;Jangan.&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Jangan bandel kalau dibilang gak boleh ya jangan, nurut aja kan masih bisa telfon.&quot;</p>
+              <p>Nicholass terdiam. Ia menundukkan kepalanya.</p>
+              <p>&quot;Sebenarnya... Nicho udah sempat mau kabur.&quot;</p>
+              <p>&quot;Hah?&quot;</p>
+              <p>&quot;Iya. Tapi ketahuan.&quot;</p>
+              <p>Liu langsung tertawa pelan. Tawa yang selama beberapa hari terakhir begitu ia rindukan.</p>
+              <p>&quot;Dasar, Bandel. Kak Moura pasti pusing.&quot;</p>
+              <p>&quot;Iya, Katanya kalau Nicho sekalian gak usah balik lagi. Nicho bales &#x27;yang penting bisa tinggal sama liu&#x27; malah dijewer&quot; Liu menggeleng sambil tertawa.</p>
+              <p>&quot;Makanya nurut, heran bandel banget.&quot;</p>
+              <p>Kalimat itu membuat Nicholass tersenyum kecil.</p>
+              <p>&quot;Heheheh&quot;</p>
+              <p>&quot;Jadi sekarang...&quot;</p>
+              <p>&quot;Nicho istirahat aja biar besok lebih bertenaga. Nanti kita ketemu lagi.&quot;</p>
+              <p>Nicholass mengangguk pelan. Meski Liu tidak bisa melihatnya.</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Nanti kita jalan lagi.&quot;</p>
+              <p>&quot;Makan lagi.&quot;</p>
+              <p>&quot;Gambar lagi.&quot;</p>
+              <p>&quot;Masak lagi.&quot;</p>
+              <p>&quot;Pokoknya...&quot;</p>
+              <p>&quot;Lakuin semua lagi.&quot;</p>
+              <p>Liu tersenyum hangat.</p>
+              <p>&quot;Janji?&quot;</p>
+              <p>&quot;Janji.&quot;</p>
+              <p>Malam itu...</p>
+              <p>Tak ada pembahasan tentang penyakit. Tak ada keluhan. Tak ada tangisan. Mereka hanya saling menemani. Menceritakan hal-hal kecil. Tentang film yang ingin ditonton bersama. Tentang tempat makan baru yang ingin dicoba. Tentang gambar yang belum selesai dibuat. Tentang masa depan yang masih mereka susun perlahan. Tanpa terasa....</p>
+              <p>Suara Liu mulai semakin pelan.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Hm?&quot;</p>
+              <p>&quot;Makasih ya.... Udah selalu nemenin liu gimanapun keadaannya&quot;</p>
+              <p>&quot;Terimakasih kembali sayang, terimakasih juga atas segalanya sayang&quot;</p>
+              <p>&quot;Yaudah ayo tidur aja, Liu harus istirahat cepet. Nicho temenin sampai Liu bener-bener tidur.&quot;</p>
+              <p>&quot;Hmm...&quot;</p>
+              <p>Beberapa menit kemudian...</p>
+              <p>Yang terdengar dari seberang telepon hanyalah napas Liu yang mulai teratur. Ia sudah tertidur. Nicholass tidak langsung memutus panggilan. Ia tetap tersenyum sambil mendengarkan napas tenang orang yang paling ia cintai.</p>
+              <p>&quot;Selamat tidur, Sayang. I love you more than anything.. Cepat sembuh ya...&quot;</p>
+              <p>Bisiknya pelan. Barulah setelah memastikan Liu benar-benar terlelap...</p>
+              <p>Ia menutup panggilan.</p>
+              <p>Beberapa minggu kemudian...</p>
+              <p>Keduanya akhirnya kembali bertemu. Tak ada pelukan yang tergesa-gesa. Tak ada kata-kata berlebihan. Begitu saling melihat...</p>
+              <p>Mereka hanya tersenyum. Lalu berjalan mendekat. Dan saling menggenggam tangan.</p>
+              <p>&quot;Akhirnya ketemu.&quot;</p>
+              <p>&quot;Iya.&quot;</p>
+              <p>&quot;Kangen.&quot;</p>
+              <p>&quot;Kangen juga.&quot;</p>
+              <p>Sejak hari itu...</p>
+              <p>Mereka kembali menjalani hari-hari seperti biasa. Saling mengunjungi. Saling menemani belajar. Saling menggambar. Saling memasak. Saling mengingatkan untuk makan. Saling mengingatkan untuk beristirahat.</p>
+              <p>Jika Nicholass sedang lelah menghadapi dirinya sendiri...</p>
+              <p>Liu selalu menjadi tempat pertama yang ia tuju.</p>
+              <p>Jika Liu mulai tenggelam dalam overthinking...</p>
+              <p>Nicholass selalu menjadi orang pertama yang sabar menjawab satu per satu pertanyaan di kepalanya hingga semua ketakutan itu perlahan menghilang.</p>
+              <p>Saat Nicholass merasa ingin menyerah...</p>
+              <p>Liu akan berdiri di sampingnya, menggenggam tangannya, dan mengingatkannya bahwa ia tidak sedang berjuang sendirian.</p>
+              <p>Dan saat Liu kehilangan semangat...</p>
+              <p>Nicholass akan mengembalikan senyum itu, dengan caranya yang sederhana.</p>
+              <p>Hari demi hari berlalu. Bulan berganti bulan. Tanpa terasa...</p>
+              <p>Tiga setengah tahun telah mereka lewati bersama. Tiga setengah tahun yang dipenuhi tawa. Tangis. Perdebatan kecil. Pelukan hangat. Dan panggilan &quot;sayang&quot; yang tak pernah kehilangan makna. Mereka menyadari...</p>
+              <p>Cinta bukan hanya tentang selalu bahagia.</p>
+              <p>Bukan pula tentang selalu memiliki jawaban untuk setiap masalah.</p>
+              <p>Cinta adalah tentang tetap memilih orang yang sama...</p>
+              <p>Berulang kali. Bahkan ketika dunia terasa begitu melelahkan. Bahkan ketika keadaan berkali-kali berusaha memisahkan.</p>
+              <p>Karena cinta tidak pernah mengajarkan mereka hanya untuk saling memanggil &quot;sayang&quot;.</p>
+              <p>Cinta mengajarkan mereka untuk tetap mempertahankan pilihan yang sama...</p>
+              <p>Saat dunia perlahan berusaha menghancurkan mereka.</p>
+              <p>Dan selama mereka masih bisa saling berkata...</p>
+              <p>&quot;Aku selalu ada di sini, selalu sama kamu.&quot;</p>
+              <p>Maka selalu ada alasan untuk menantikan hari esok.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-10">Bab 10</a><a class="primary-button" href="#chapter-12">Bab 12</a></nav>
+          </div>
+        </article>
+      </section>
+
+      <section class="page special-page" id="chapter-12">
+        <div class="special-content special-chapter-content">
+          <div class="special-copy prose-card">
+            <p class="kicker">Special Chapter</p>
+            <h2>Special Chapter: Bab 12</h2>
+              <p>Setengah tahun. Waktu terus berjalan. Namun bagi Liu...</p>
+              <p>Jam seolah berhenti tepat di hari ketika Nicholass menutup matanya untuk terakhir kali. Tak ada yang pernah menyangka. Bahkan Kak Moura...</p>
+              <p>Orang yang selama ini paling sering merawat Nicholass...</p>
+              <p>Baru mengetahui kenyataan itu setelah semuanya terlambat. Penyakit jantung yang diderita Nicholass selama bertahun-tahun tak pernah ia ceritakan kepada siapa pun.</p>
+              <p>Bukan kepada Jonathan. Bukan kepada Elrick. Bukan kepada Kak Moura. Bahkan...</p>
+              <p>Bukan kepada Liu.</p>
+              <p>Baginya...</p>
+              <p>Rasa sesak, nyeri, dan lelah yang sesekali datang hanyalah bagian dari hidup yang sudah terlalu lama ia kenal. Ia tidak pernah memeriksakan diri.</p>
+              <p>Tidak pernah berobat. Ia hanya terus menjalani hari-harinya seperti biasa.</p>
+              <p>Tetap tersenyum. Tetap bercanda. Tetap menjadi tempat orang lain bersandar. Sampai akhirnya...</p>
+              <p>Tubuhnya benar-benar menyerah.</p>
+              <p>Hari itu...</p>
+              <p>Kampus kembali mengadakan acara tahunan. Gedung pertunjukan dipenuhi mahasiswa baru. Suasananya tak jauh berbeda seperti tahun-tahun sebelumnya.</p>
+              <p>Lampu panggung yang terang. Suara tawa. Tepuk tangan. Dan musik yang memenuhi ruangan. Namun...</p>
+              <p>Ada satu hal yang berbeda. Nicholass tidak lagi berada di sana. Masa kepengurusannya di Tim Music sebenarnya telah berakhir jauh sebelum itu. Satu periode telah selesai. Sertifikat organisasi telah diterima. Semua kewajibannya sebagai anggota telah ia tuntaskan. Sayangnya...</p>
+              <p>Ia tidak pernah sempat melihat hari wisuda yang dulu sering mereka bicarakan bersama.</p>
+              <p>Di antara keramaian itu...</p>
+              <p>Liu berdiri di belakang panggung. Tangannya menggenggam mikrofon dengan erat. Jantungnya berdegup lebih cepat dari biasanya. Panitia sebenarnya tidak memiliki penampilan tambahan pada susunan acara. Namun Liu mengajukan satu permintaan sederhana. Ia hanya ingin naik ke atas panggung...</p>
+              <p>Sekali saja. Bukan untuk memperkenalkan organisasi. Bukan untuk menunjukkan kemampuan. Melainkan...</p>
+              <p>Untuk menyampaikan sesuatu kepada seseorang yang tak lagi bisa mendengarnya. Di bangku penonton...</p>
+              <p>Jonathan dan Elrick duduk berdampingan. Di sebelah mereka...</p>
+              <p>Kak Moura menggenggam sebuah foto kecil Nicholass yang selalu ia simpan di dalam dompet. Matanya sudah memerah sejak acara belum dimulai. Lampu aula perlahan diredupkan.</p>
+              <p>Sorot cahaya jatuh tepat di tengah panggung. Liu melangkah perlahan. Ruangan menjadi sunyi. Ia menarik napas panjang sebelum akhirnya berbicara.</p>
+              <p>&quot;Halo...&quot;</p>
+              <p>&quot;Terima kasih...&quot;</p>
+              <p>&quot;Karena sudah mengizinkan saya meminjam sedikit waktu malam ini.&quot;</p>
+              <p>&quot;Saya...&quot;</p>
+              <p>&quot;Ingin mempersembahkan satu lagu.&quot;</p>
+              <p>&quot;Lagu ini...&quot;</p>
+              <p>&quot;Buat seseorang yang pernah mengajarkan saya arti bertahan.&quot;</p>
+              <p>Liu tersenyum kecil.</p>
+              <p>Meski matanya telah dipenuhi air mata.</p>
+              <p>&quot;Semoga...&quot;</p>
+              <p>&quot;Di mana pun kamu sekarang...&quot;</p>
+              <p>&quot;Kamu masih mau denger aku sampaikan lagu ini.&quot;</p>
+              <p>Musik mulai mengalun. Liu menyanyikan lagu yang dulu sering mereka dengarkan bersama.</p>
+              <p>&quot;Talking to the Moon.&quot;</p>
+              <p>Setiap lirik yang keluar dari bibirnya terdengar begitu pelan. Namun penuh kerinduan. Tak sedikit mahasiswa yang awalnya hanya menonton...</p>
+              <p>Kini ikut terdiam. Beberapa bahkan mulai mengusap air mata. Bukan karena mereka mengenal Nicholass. Melainkan...</p>
+              <p>Karena kerinduan Liu terasa begitu nyata. Seolah setiap nada adalah surat yang tak pernah sempat dikirim.</p>
+              <p>Lagu itu berakhir. Ruangan tetap sunyi. Liu menundukkan kepala beberapa saat. Menghapus air mata yang jatuh di pipinya. Kemudian ia kembali mendekat ke mikrofon.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Kalau memang...&quot;</p>
+              <p>&quot;Kamu masih bisa denger.&quot;</p>
+              <p>&quot;Liu cuma mau bilang...&quot;</p>
+              <p>&quot;Makasih.&quot;</p>
+              <p>&quot;Makasih karena pernah datang.&quot;</p>
+              <p>&quot;Makasih karena pernah memilih Liu.&quot;</p>
+              <p>&quot;Makasih karena udah jadi rumah...&quot;</p>
+              <p>&quot;Di saat Liu bahkan belum tahu arti pulang.&quot;</p>
+              <p>Ia menarik napas panjang. Senyumnya perlahan kembali muncul.</p>
+              <p>&quot;Katanya dulu...&quot;</p>
+              <p>&quot;Kalau sedih...&quot;</p>
+              <p>&quot;Gak boleh berhenti hidup.&quot;</p>
+              <p>&quot;Harus bangun lagi.&quot;</p>
+              <p>&quot;Pelan-pelan.&quot;</p>
+              <p>&quot;Walaupun sakit.&quot;</p>
+              <p>&quot;Liu janji.&quot;</p>
+              <p>&quot;Liu bakal berusaha.&quot;</p>
+              <p>&quot;Liu bakal terus melangkah.&quot;</p>
+              <p>&quot;Bukan karena Liu udah gak rindu.&quot;</p>
+              <p>&quot;Tapi karena Liu tahu...&quot;</p>
+              <p>[09/08/2026 10:52] 𝐍𝐢𝐜𝐡𝐨𝐨 🪬: &quot;Itu yang paling kamu pengen, terimakasih selalu memprioritaskan liu meski di detik terakhir sekalipun.&quot;</p>
+              <p>Air mata kembali jatuh. Namun kali ini...</p>
+              <p>Liu tidak menangis sesenggukan. Ia tersenyum. Senyum yang pernah diajarkan Nicholass.</p>
+              <p>&quot;Nicho...&quot;</p>
+              <p>&quot;Kamu akan selalu jadi bagian paling indah dari hidup Liu.&quot;</p>
+              <p>&quot;Bukan untuk dilupakan.&quot;</p>
+              <p>&quot;Tapi untuk dikenang.&quot;</p>
+              <p>&quot;Selamanya.&quot;</p>
+              <p>Liu menatap langit-langit aula sejenak. Seolah berharap seseorang sedang tersenyum melihatnya.</p>
+              <p>&quot;Terima kasih...&quot;</p>
+              <p>&quot;Karena pernah hadir.&quot;</p>
+              <p>&quot;Dan terima kasih...&quot;</p>
+              <p>&quot;Karena sudah mengajarkan Liu bahwa mencintai bukan hanya tentang memiliki.&quot;</p>
+              <p>&quot;Tapi juga tentang berani melepaskan.&quot;</p>
+              <p>&quot;I Love You Forever My Sunshine, NichoLiu Selamanya&quot;</p>
+              <p>Sorot lampu perlahan meredup. Tepuk tangan memenuhi seluruh ruangan. Jonathan menundukkan kepala. Elrick mengusap matanya diam-diam. Sementara Kak Moura menggenggam foto Nicholass semakin erat.</p>
+              <p>Di luar gedung...</p>
+              <p>Langit malam dipenuhi cahaya bulan. Seolah masih ada seseorang yang diam-diam mendengarkan setiap kata yang baru saja disampaikan.</p>
+              <p>Mungkin...</p>
+              <p>Kenangan memang tidak pernah benar-benar pergi. Ia hanya berubah bentuk. Menjadi lagu. Menjadi foto. Menjadi surat. Menjadi cerita. Dan bagi Liu...</p>
+              <p>Nicholass akan selalu hidup...</p>
+              <p>Di setiap halaman kenangan yang mereka tulis bersama, akan selalu abadi meski dunia telah tiada.</p>
+            <p class="video-context">Video Liu tampil di chapter ini, jadi sengaja diletakkan sebagai bagian dari Special Chapter.</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#chapter-11">Bab 11</a><a class="primary-button" href="#memory">Memory Album</a></nav>
+          </div>
+          <div class="special-video-frame"><video src="assets/chapter-11-memory.mp4" controls playsinline preload="metadata"></video></div>
+        </div>
+      </section>
+
+      <section class="page memory-page" id="memory">
+        <div class="memory-intro reveal">
+          <p class="kicker">Memory Album</p>
+          <h2>Album Kenangan</h2>
+          <video src="assets/ending-moment-web-story.mp4" controls playsinline preload="metadata"></video>
+        </div>
+        <div class="scrapbook">
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-01.jpg" alt="Memory album photo 1" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-02.jpg" alt="Memory album photo 2" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-03.jpg" alt="Memory album photo 3" /></figure>
+          <figure class="memory-photo reveal wide"><img src="assets/memories/memory-04.jpg" alt="Memory album photo 4" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-05.jpg" alt="Memory album photo 5" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-06.jpg" alt="Memory album photo 6" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-07.jpg" alt="Memory album photo 7" /></figure>
+          <figure class="memory-photo reveal wide"><img src="assets/memories/memory-08.jpg" alt="Memory album photo 8" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-09.jpg" alt="Memory album photo 9" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-10.jpg" alt="Memory album photo 10" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-11.jpg" alt="Memory album photo 11" /></figure>
+          <figure class="memory-photo reveal no-crop"><img src="assets/memories/memory-12.jpg" alt="Memory album photo 12" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-13.jpg" alt="Memory album photo 13" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-14.jpg" alt="Memory album photo 14" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-15.jpg" alt="Memory album photo 15" /></figure>
+          <figure class="memory-photo reveal wide"><img src="assets/memories/memory-16.jpg" alt="Memory album photo 16" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-17.jpg" alt="Memory album photo 17" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-18.jpg" alt="Memory album photo 18" /></figure>
+          <figure class="memory-photo reveal"><img src="assets/memories/memory-19.jpg" alt="Memory album photo 19" /></figure>
+          <figure class="memory-photo reveal wide"><img src="assets/memories/memory-20.jpg" alt="Memory album photo 20" /></figure>
+        </div>
+      </section>
+
+      <section class="page reading-page" id="letter">
+        <article class="reading-card prose-card">
+          <p class="kicker">Letter From The Writer</p>
+          <h2>Letter From The Writer</h2>
+              <p>Hai Liu, Nicho mau minta maaf sebelumnya kl cerita ini akhirnya bukan akhir bahagia bersama. Nicho mau bilang lewat cerita ini, apapun yang terjadi Nicho akan selalu milih liu untuk jadi tempat kembali Nicho sampai detik terakhir. Kalau seandainya kita gk bisa kekal bersama hubungan kita di dunia ini, Nicho akan berusaha sebisa mungkin untuk bikin kisah kita kekal dikenang penuh warna. Liu pilihan terbaik Nicho yang akan selalu Nicho pilih sampai kapanpun.</p>
+              <p>Terimakasih banyak sayang, terimakasih sudah selalu bersama disetiap keadaan. Terimakasih juga udah nerima setiap kekurangan Nicho. Liu orang pertama yang selalu ngelihat kekurangan Nicho sebagai kelebihan yang luar biasa. Terimakasih sudah memilih Nicho untuk berjalan bersama di kesempatan ini.</p>
+              <p>Liu, ayo kita jadiin setiap kekurangan kita jadi kelebihan yang bisa melengkapi satu sama lain. Kita buat kisah paling berkesan di kesempatan yang kita punya, jangan peduli dulu akhirnya. Gimanapun  akhirnya, kl kita berhasih buat kisah yang indah pasti bukan jd akhir yang buruk.</p>
+              <p>Liu, my star.. Tetaplah jalan disisiku dan tatap aku dengan kasih sayangmu, jangan pernah jalan didepanku dan menatap dengan iba. Ayo kita jalan bersama untuk waktu yang lama.</p>
+              <p>🤍 Happy 1st Wedding Monthsary, My Bella.</p>
+              <p>One month down, forever to go. I love you, today and always my star my angel. – Nicholass</p>
+            <nav class="chapter-nav"><a class="quiet-button" href="#memory">Memory Album</a></nav>
+                  <div class="song-list"><p class="kicker">Song For You</p><span>10,000 Hours</span><span>Only One</span><span>Found</span></div>
+          <button class="primary-button" id="closeBook" type="button">Close Book</button>
+        </article>
+      </section>
+
+      <section class="ending-page" id="ending" aria-label="Ending">
+        <div class="ending-stars" aria-hidden="true"></div>
+        <div class="ending-copy reveal">
+          <p class="kicker">The End</p>
+          <h2>Thank You</h2>
+          <p>Ucapan penutup kamu bisa diganti di sini.</p>
+          <a class="quiet-link" href="#cover">Open Again</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+    <audio id="siteAudio" preload="metadata"></audio>
+    <audio id="fadeAudio" preload="metadata"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
