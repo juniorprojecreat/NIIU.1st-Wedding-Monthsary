@@ -58,10 +58,11 @@ const playlist = playlistGroups.flatMap((group, groupIndex) =>
 let currentTrack = 0;
 let isSeeking = false;
 let shouldResumeAfterSeek = false;
+let openingStarted = false;
 
 document.body.classList.add("is-opening");
-openingVideo.muted = false;
-openingVideo.volume = 0.9;
+openingVideo.pause();
+openingVideo.currentTime = 0;
 
 function loadState() {
   try {
@@ -95,13 +96,23 @@ function applyInitialState() {
 }
 
 async function playOpeningVideoWithSound() {
+  if (openingStarted) {
+    return true;
+  }
+
+  opening.classList.add("is-video-playing");
+  openingVideo.currentTime = 0;
   openingVideo.muted = false;
   openingVideo.volume = 0.9;
 
   try {
     await openingVideo.play();
+    openingStarted = true;
+    return true;
   } catch {
-    document.addEventListener("pointerdown", playOpeningVideoWithSound, { once: true });
+    opening.classList.remove("is-video-playing");
+    openBook.textContent = "Tap To Play Opening";
+    return false;
   }
 }
 
@@ -121,6 +132,16 @@ function showNovel() {
   window.setTimeout(() => {
     opening.setAttribute("aria-hidden", "true");
   }, 1300);
+}
+
+async function handleOpenBookClick() {
+  openBook.disabled = true;
+  const played = await playOpeningVideoWithSound();
+  openBook.disabled = played;
+
+  if (!played) {
+    openBook.disabled = false;
+  }
 }
 
 function updateTrackMeta(render = true, setSource = true) {
@@ -289,7 +310,8 @@ function fadeOutAudio() {
   }, 80);
 }
 
-openBook.addEventListener("click", showNovel);
+openBook.addEventListener("click", handleOpenBookClick);
+openingVideo.addEventListener("ended", showNovel);
 playTrack.addEventListener("click", toggleAudio);
 prevTrack.addEventListener("click", () => changeTrack(-1));
 nextTrack.addEventListener("click", () => changeTrack(1));
@@ -363,4 +385,3 @@ document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe
 applyInitialState();
 renderPlaylist();
 updateReadingProgress();
-playOpeningVideoWithSound();
